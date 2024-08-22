@@ -1,0 +1,489 @@
+
+// скрываем картинку мобил меню
+.menu-mobile-line{
+  display: none;
+}
+
+
+.main-header {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 2%;
+
+}
+
+.header-logo-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+
+
+
+}
+
+.menu-header-main-phone a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  margin-left: 10px;
+
+
+}
+
+.menu-header-main-phone div {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #80808A;
+  text-decoration: none;
+  align-items: center;
+
+}
+
+.list-menu-head-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 576px;
+  margin-left: 120px;
+}
+
+.list-menu-head-block img {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+
+}
+
+.list-menu-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 416px;
+
+  a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #80808A;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+//=------------меню выпад------------------
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1312px;
+  margin: 0 auto;
+}
+
+
+//поиск
+
+.search-container {
+  position: relative;
+  width: 294px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.search-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+// 
+
+
+.navbar-block {
+  overflow: hidden;
+
+
+  width: 720px;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+/* Links inside the navbar */
+.navbar-block a {
+  float: left;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  padding: 12px 2px;
+  text-decoration: none;
+
+}
+
+/* The dropdown container */
+.dropdown-block {
+  float: left;
+  overflow: hidden;
+  display: flex;
+
+
+}
+
+/* Dropdown button */
+.dropbtn-block {
+  font-size: 16px;
+  border: none;
+
+  color: #333;
+  padding: 14px 2px;
+  text-align: center;
+  background-color: inherit;
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar-block a:hover,
+.dropdown-block:hover .dropbtn-block {
+  color: red;
+
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content-block {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 66%;
+  left: 17%;
+  top: 9.5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  //------------картинка в dropdown --------------------
+  background-image: url('./../img/logo/banerCat.png');
+  background-size: contain;
+  /* или contain, в зависимости от того, как вы хотите масштабировать изображение */
+  background-position: right;
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown-block:hover .dropdown-content-block {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-block {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+  height: 100%;
+}
+
+/* Style links inside the columns */
+.column-block a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column-block a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+// 
+.iconBlock a {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #16151C;
+  // width: 120px;
+  justify-content: center;
+ 
+
+
+}
+
+.custom-span {
+  display: inline-block;
+  /* или block, в зависимости от контекста */
+  width: 2px;
+  height: 20px;
+  background-color: #E5E5EB;
+
+
+  margin-left: 1.6rem;
+}
+
+.iconBlock {
+
+  display: flex;
+  align-content: center;
+
+  align-items: center;
+}
+
+
+
+// ----------------------------------------------
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+// ---------------------------
+
+.register-menu-btn {
+  cursor: pointer;
+}
+
+.registration-popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+   transform: translate(20%, 4%);
+  width: 460px;
+  max-height: 90vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.registration-popup .popup-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.registration-popup .form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.registration-popup .form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.registration-popup .password-toggle {
+  position: relative;
+}
+.registration-popup .password-toggle .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.registration-popup .checkbox-group {
+  margin-bottom: 20px;
+}
+.registration-popup .checkbox-group .checkbox-label {
+  display: flex;
+  margin-right: 10px;
+ 
+  align-items: center;
+}
+.registration-popup .register-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.registration-popup .register-button:hover {
+  background-color: #218838;
+}
+.registration-popup .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ccc;
+}
+.registration-popup .bottom-text {
+  text-align: center;
+  font-size: 14px;
+}
+.registration-popup .bottom-text .login-link {
+  text-decoration: none;
+  color: #007BFF;
+}
+.registration-popup .bottom-text .login-link:hover {
+  text-decoration: underline;
+}
+
+.text-reg{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #80808A;
+  margin-bottom: 10px;
+}
+
+

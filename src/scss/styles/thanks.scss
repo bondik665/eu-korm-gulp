@@ -1,0 +1,54 @@
+.thanks-content-box {
+    width: 644px;
+}
+
+.wrapper-thanks {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.go-home-btn {
+    width: 226px;
+    height: 48px;
+    background-color: #00A743;
+    border-radius: 10px;
+    padding: 12px 24px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.go-home-btn:hover {
+    background-color: #008035;
+}
+
+.go-lc-btn {
+    width: 264px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #16151C;
+    border-radius: 10px;
+    padding: 12px 24px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.go-lc-btn:hover {
+    background-color: #008035;
+    color: #fff;
+    border: 1px solid #008035;
+}
+
+.wrapper-thank__btn {
+    width: 506px;
+    display: flex;
+    justify-content: space-between;
+}
+.thanks-content-box span{
+    color: #00A743;
+}

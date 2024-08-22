@@ -1,0 +1,142 @@
+// крошки
+.breadcrumbs {
+  padding: 26px 0;
+
+  // @include lg {
+  //   padding: 16px 0;
+  // }
+  .breadcrumbs__container {
+    display: flex;
+    justify-content: flex-start;
+
+    ul {
+      display: flex;
+      font-size: 16px;
+      line-height: 20px;
+      column-gap: 16px;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+
+        a {
+          padding: 8px 0;
+        }
+
+        span {
+          color: #C5C5C5;
+        }
+      }
+    }
+  }
+}
+
+// каталог главный блок 
+.catalog-main {
+  margin-left: 45px;
+}
+
+.catalog-filter__container-nav {
+  width: 478px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+
+
+}
+
+
+.nav-btn-wrapper {
+  width: 121px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #E5E5EB;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+}
+.link-nav-catalog{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #16151C;
+
+}
+.title-ackcii{
+  width: 99%;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-link-wrapper{
+  display: flex;
+}
+.sort-link-wrapper-form select{
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight:400;
+  width: 150px;
+}
+
+
+.more-text{
+  text-align: start;
+}
+//=--------------------
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+  
+}
+.text-container {
+  position: relative;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.fade-out {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 70%);
+}
+.show-more-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.show-more-btn:hover {
+  background-color: #0056b3;
+}
+.hidden-text {
+  display: none;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}

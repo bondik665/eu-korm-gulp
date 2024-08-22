@@ -1,0 +1,38 @@
+@media (max-width: 1024px) {
+
+
+    .reviews-wrapper-main {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .reviews-wrapper-main {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .sidebar-img__top {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .reviews-sidebar__container {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .sidebar-img__top .chel {
+        width: 100%;
+        height: auto;
+    }
+    
+}

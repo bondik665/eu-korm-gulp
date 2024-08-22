@@ -1,0 +1,29 @@
+@media  (max-width: 1024px) {
+
+    .profile-h1 {
+        width: 100%;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        color: #16151c;
+    }
+
+    .wrapper-bonus-main {
+        width: 100%;
+    }
+
+    .profile-bonus-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .profile-bonus-box p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #16151c;
+    }
+
+}

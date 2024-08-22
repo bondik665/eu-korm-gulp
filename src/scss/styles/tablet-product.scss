@@ -1,0 +1,121 @@
+@media (min-width: 768px) and (max-width: 820px) {
+    /* Стили для разрешений от 768px до 820px */
+    .text-h1-catalog-product-card {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 30px;
+        color: #16151c;
+    }
+    .container-card-main {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .field-cart-element {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        flex-direction: row-reverse;
+       
+    }
+    .product-block {
+        width: 19rem;
+       
+    }
+    .desc-wrapper-box {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .reviews-sidebar__createR {
+        width: 100%;
+        height: 230px;
+        border-radius: 20px;
+        background-color: #fafafc;
+    }
+    .accordion {
+        width: 50%;
+    }
+    .text-h2-catalog-product-card {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 12px;
+        color: #333;
+        margin-bottom: 40px;
+    }
+    .container-slider-product {
+        width: 50%;
+    }
+    .reviews-title-wrapper {
+        width: 100%;
+    }
+    .reviews-container {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .bondbox2 {
+        width: 310px;
+    }
+    .add-to-cart-btn {
+        width: 100%;
+        height: 56px;
+        background-color: #00a743;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        margin-top: 16px;
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width: 821px) and (max-width: 1024px) {
+    /* Стили для разрешений от 821px до 1024px */
+    .text-h1-catalog-product-card {
+        width: 100%;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 44px;
+        color: #16151c;
+    }
+    .choice-box{
+        width: 100%;
+    }
+    .container-card-main {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .field-cart-element {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .desc-wrapper-box {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .reviews-sidebar__createR {
+        width: 100%;
+        height: 230px;
+        border-radius: 20px;
+        background-color: #fafafc;
+    }
+    .accordion {
+        width: 50%;
+    }
+    .product-block {
+        width: 350px !important;
+    }
+}

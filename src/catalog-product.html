@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Карточка товара"
+})
+
+<body>
+  @@include('html/header.html',{})
+  <main>
+    <!-- крошки -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__container">
+        <ul>
+          <li>
+            <a href="">Главная</a><span>/</span>
+          </li>
+          <li>
+            <a href="">Каталог</a><span>/</span>
+          </li>
+          <li>
+            <a href="">Зоотовары</a><span>/</span>
+          </li>
+          <li>
+            <a href="">Товары для...</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- крошки конец -->
+
+    <!-- main-container start -->
+    <h1 class="text-h1-catalog-product-card">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком)
+      12кг</h1>
+    <h2 class="text-h2-catalog-product-card">Безглютеновый корм для щенков средних пород, говядина</h2>
+    <div class="container-card-main">
+
+      <div class="container-slider-product">
+
+        <!-- slider-->
+        <div class="carousel2">
+          <div class="carousel__item2"><img src="@img/tovar/tovar2.png" alt="" class="carousel__img2"></div>
+          <div class="carousel__item2"><img src="@img/tovar/tovar2.png" alt="" class="carousel__img2"></div>
+
+        </div>
+      </div>
+      <!-- block2 -->
+      <div class="container-descripion-product">
+
+
+        <div class='wrapper-product-desc'>
+
+          <div class="product-choice">
+            <div class="img-product-otzuv">
+              <img src="@img/mark-full.svg" alt="">
+              <img src="@img/mark-full.svg" alt="">
+              <img src="@img/mark-full.svg" alt="">
+              <img src="@img/mark-clear.svg" alt="">
+              <img src="@img/mark-clear.svg" alt="">
+
+              <a href="#" class="otzuv-cart-link">2 отзыва</a>
+
+            </div>
+            <br>
+            <span>Артикул: 70376_14447</span>
+            <br>
+            <span>Производитель: Bosch</span>
+            <p>Опции товара:</p>
+            <!-- choice 1 -->
+            <div class="choice-box">
+              <span class="card-amount-disc">-20%</span>
+              <div class="card-amount bondbox">
+
+
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <div class="card-discount-price">
+                    <span>55.4 руб.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- choice 1 end -->
+            <!-- choice 2 -->
+            <div  class="choice-box">
+              <span class="card-amount-disc">-20%</span>
+              <div class="card-amount bondbox">
+
+
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <div class="card-discount-price">
+                    <span>55.4 руб.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- choice 2 end -->
+            <!-- choice 3 -->
+            <div  class="choice-box">
+              <span class="card-amount-disc">-20%</span>
+              <div class="card-amount bondbox">
+
+
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <div class="card-discount-price">
+                    <span>55.4 руб.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- choice 3 end -->
+            <!-- choice 4 -->
+            <div  class="choice-box">
+              <br>
+              <!-- <span class="card-amount-disc">1</span> -->
+              <div class="card-amount bondbox" id="razves">
+                <div>
+                  <div class="card-price new">
+                    <!-- <button id="openPopup">Развес</button> -->
+                    <p>Развес</p>
+                  </div>
+                  <!-- <div id="popup" class="popup">
+                    <div class="popup-content">
+                      <span class="close-button">&times;</span>
+                      <input type="number" placeholder="Введите вес">
+                      <button class="add-to-cart">В корзину</button>
+                    </div>
+                  </div> -->
+
+
+
+                </div>
+
+              </div>
+            </div>
+            <!-- choice 4 end -->
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- start block3 -->
+      <div class="field-cart-element">
+
+
+        <div class="wrapper-cart-element">
+          <div class="product-block">
+            <div class="availability">В наличии <span>✔</span> <span class="weight">| 12кг</span></div>
+            <div class="price">156 руб</div>
+            <div class="old-price">200 руб</div>
+            <div class="quantity-input">
+              <button onclick="decreaseQuantity()">-</button>
+              <input type="text" id="quantity" value="1" readonly>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <div class="watchrazves">
+              <span class="close-button" onclick="closeWatchrazves()">×</span>
+              Укажите желаемый вес
+              <label for="weight"> (грамм):</label>
+              <input type="number" id="weight" name="weight" step="100" min="100" required>
+              <div class="watchrazves-text">Минимальный заказ на развес составляет 20 кг.</div>
+            </div>
+            <button class="add-to-cart-btn">В корзину</button>
+          </div>
+
+
+        </div>
+
+
+        <div class="delivery-box-card">
+          <p>Доставка в <span>г. Минск</span></p>
+          <div class="delivery-box-card-desc">
+            <a href="#"><img src="@img/tovar/coube.png" alt="">Бесплатная доставка курьером</a>
+            <a href="#"><img src="@img/tovar/solar.png" alt="">Самовывоз из <span>8 магазинов</span></a>
+            <a href="#"><img src="@img/tovar/car.png" alt="">Доставка по РБ до вашего дома</a>
+
+          </div>
+        </div>
+
+
+      </div>
+      <!-- end block -->
+
+      <!-- block1 end -->
+    </div>
+
+    <!-- main-container end -->
+
+    <br>
+    <div class="desc-wrapper-box">
+
+      <!-- аккордион start -->
+      <div class="accordion">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            Описание товара
+             
+          </div>
+          <div class="accordion-content">
+          
+              <!--  -->
+              <div>
+                <div class="text-container">
+                  <p>
+                    Чтобы собака была активной и здоровой, ей нужен сбалансированный рацион. Советуем выбирать сухой корм двух классов: Качественное питание поможет не допустить проблем со здоровьем в будущем. Благодаря высокой питательной ценности питомцу хватит небольшой порции, чтобы насытиться и получить необходимое количество полезных веществ.
+                    Чтобы собака была активной и здоровой, ей нужен сбалансированный рацион. Советуем выбирать сухой корм двух классов: Качественное питание поможет не допустить проблем со здоровьем в будущем. Благодаря высокой питательной ценности питомцу хватит небольшой порции, чтобы насытиться и получить необходимое количество полезных веществ.
+                    
+                  </p>
+                  <div class="fade-out"></div>
+              </div>
+              <div class="hidden-text">
+                  <p>
+                   вы найдёте рационы не только предложенных, но и других брендов. Чтобы купить корм для собак в интернет магазине, оформляйте заказ через корзину. Менеджер перезвонит с вами, согласует наличие позиций и время доставки.
+                  </p>
+              </div>
+              <button class="show-more-btn2">Показать еще</button>
+              </div>
+           
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Состав</div>
+          <div class="accordion-content">
+            <p>Состав включает в себя: мясо курицы, рис, овощи, минералы и витамины. Все ингредиенты выбраны с учетом их
+              питательных свойств и полезности для здоровья вашего питомца.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Рекомендации по кормлению</div>
+          <div class="accordion-content">
+            <p>Рекомендуется кормить вашего питомца два раза в день. Количество корма зависит от возраста, веса и
+              активности вашего питомца. Обязательно обеспечьте постоянный доступ к свежей воде.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Пищевые добавки</div>
+          <div class="accordion-content">
+            <p>В состав входят следующие пищевые добавки: витамин A, витамин D3, витамин E, железо, цинк, медь и
+              марганец. Эти добавки обеспечивают полноценное питание и укрепляют иммунитет.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Элементы</div>
+          <div class="accordion-content">
+            <p>Товар содержит все необходимые элементы для поддержания здоровья вашего питомца. Это включает в себя
+              белки, жиры, углеводы, а также минеральные и витаминные комплексы.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="desc-wrapper-box-text">
+        <div class="delivery-box-card-desc">
+          <div class="info-d">Возраст питомца</div>
+          <a href="#"><img src="@img/tovar/solar.png" alt="">Для взрослых собак</a>
+          <div class="info-d">Класс корма</div>
+          <a href="#"><img src="@img/tovar/solar.png" alt=""> <span>Bosch Line (Premium); Все линейки</span></a>
+          <div class="info-d">Показания</div>
+          <a href="#"><img src="@img/tovar/solar.png" alt=""><span>Для чувствительного пищеварения</span></a>
+          <div class="info-d">Размер породы</div>
+          <a href="#"><img src="@img/tovar/solar.png" alt=""><span>Средняя; Крупная</span></a>
+
+
+        </div>
+      </div>
+      <!-- аккордион end -->
+    </div>
+
+
+
+
+    <!-- отзывы -->
+
+    <div class="reviews-wrapper-main">
+
+
+      <div class="reviews-wrapper">
+        <div class="reviews-title-wrapper">
+          <h3>Отзывы о товаре</h3>
+
+        </div>
+
+
+
+
+        <div class="reviews-container">
+          <div class="reviews-container__block-title">
+            <div class="reviews-container__star">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/emptyStar.png" alt="">
+            </div>
+            <div class="reviews-container__name-product">
+              <div>Bosch My Friend + Adult with Lamb (Бош Май Фрэн...)
+                <a href="#" class="title-ackcii-a">Перейти к товару</a>
+                <svg width="12" class="icon" height="12" viewBox="0 0 12 12" fill="#16151C"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2.64616 11.0596C2.43137 11.2744 2.43137 11.6227 2.64616 11.8374C2.86094 12.0522 3.20919 12.0522 3.42397 11.8374L8.88383 6.37759C8.99128 6.27013 9.04498 6.12928 9.04492 5.98844C9.04498 5.84761 8.99128 5.70676 8.88383 5.5993L3.42397 0.139445C3.20918 -0.0753436 2.86094 -0.0753435 2.64616 0.139445C2.43137 0.354233 2.43137 0.702474 2.64616 0.917263L7.71734 5.98844L2.64616 11.0596Z">
+                    </path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="12" height="12" fill="white" transform="translate(0 12) rotate(-90)"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="reviews-container__block-content">
+            <div class="reviews-container__text">
+              <p>Очень доволен этим товаром. Он сделал для меня очень удобным и простым. Все работает как
+                надо и довольно дешевый. Можете порекомендовать этот магазин.</p>
+            </div>
+          </div>
+
+          <div class="reviews__name_autor">
+            <p>Анна</p>
+            <time datetime="2017-04-20">вчера</time>
+          </div>
+
+        </div>
+
+
+
+
+        <!-- отзыв без товара-->
+        <div class="reviews-container">
+          <div class="reviews-container__block-title">
+            <div class="reviews-container__star">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/bxs_bone.png" alt="">
+              <img src="@img/reviewsImg/emptyStar.png" alt="">
+            </div>
+
+
+          </div>
+
+          <div class="reviews-container__block-content">
+            <div class="reviews-container__text">
+              <p>Очень доволен этим товаром. Он сделал для меня очень удобным и простым. Все работает как
+                надо и довольно дешевый. Можете порекомендовать этот магазин.</p>
+            </div>
+          </div>
+
+          <div class="reviews__name_autor">
+            <p>Анна</p>
+            <time datetime="2017-04-20">вчера</time>
+          </div>
+
+        </div>
+        <!--  -->
+
+      </div>
+      <!--  -->
+      <div class="reviews-sidebar__container">
+        <div class="sidebar-img__top">
+          <!-- <img src="@img/reviewsImg/reviewsImg.png" alt="pict"> -->
+          <div class="reviews-sidebar__createR">
+            <div class="reviews-sidebar__text">
+              <h5>Оставить отзыв</h5>
+              <p>Советы и отзывы помогают другим покупателям с выбором товара</p>
+            </div>
+            <div class="btn-form-wrapper">
+              <div class="btn-click">
+                <span>
+                  Написать
+                </span>
+              </div>
+
+
+              <!-- form -->
+              <div class="reviews-form" style="display: none;">
+                <div class="form-wrapper">
+                  <div class="field-form">
+                    <div class="field-form__text">
+                      <h4>Написать отзыв о магазине</h4>
+                      <p>Советы и отзывы помогают другим покупателям с выбором товара</p>
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label name="nameForm">Ваше имя*</label>
+                      <input type="text" name="nameForm" placeholder="Введите Ваше имя*">
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label name="textarea">Комментарий*</label>
+                      <textarea placeholder="Опишите ваши впечатления о работе магазина или менеджеров"
+                        name="textarea"></textarea>
+                    </div>
+
+                    <div class="input-point">
+                      <p>Ваша оценка*</p>
+                      <img src="@img/reviewsImg/gray.png" alt="">
+                      <img src="@img/reviewsImg/gray.png" alt="">
+                      <img src="@img/reviewsImg/gray.png" alt="">
+                      <img src="@img/reviewsImg/gray.png" alt="">
+                      <img src="@img/reviewsImg/gray.png" alt="">
+                    </div>
+
+                    <button class="btn-review-form">Отправить</button>
+
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+
+
+
+
+      <!--  -->
+    </div>
+
+
+    <!-- отзывы end -->
+    <!-- slider3 -->
+    <div>
+      <h4>Полезные товары</h4>
+    </div>
+    <div class="multiple-items">
+
+      <div class="multiple-items__item slider-product">
+        <div class="catalog-categories_col">
+          <div class="catalog-categories-item bondbox2">
+            <div class="catalog-categories-item-img">
+
+              <a href="/catalog-product.html"><img src="@img/tovar/tovar.png" alt="tovar"></a>
+            </div>
+            <div class="catalog-categories-item-info">
+              <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+            </div>
+            <div class="card-amount-wrapper">
+              <div>
+                <span class="card-amount-disc">-20%</span>
+                <div class="card-amount">
+
+
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <div class="card-discount-price">
+                      <span>55.4 руб.</span>
+                    </div>
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+
+            </div>
+            <details class="more">
+
+              <summary></summary>
+              <div class="card-amount-wrapper">
+                <div>
+                  <span class="card-amount-disc">-20%</span>
+                  <div class="card-amount">
+
+
+                    <div class="card-ves">1кг</div>
+                    <div>
+                      <div class="card-price">
+                        <span>42.4 руб.</span>
+                      </div>
+                      <div class="card-discount-price">
+                        <span>55.4 руб.</span>
+                      </div>
+                    </div>
+                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+
+              </div>
+
+
+
+            </details>
+          </div>
+
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="multiple-items__item slider-product">
+        <div class="catalog-categories_col">
+          <div class="catalog-categories-item bondbox2">
+            <div class="catalog-categories-item-img">
+
+              <a href="/catalog-product.html"><img src="@img/tovar/tovar.png" alt="tovar"></a>
+            </div>
+            <div class="catalog-categories-item-info">
+              <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+            </div>
+            <div class="card-amount-wrapper">
+              <div>
+                <span class="card-amount-disc">-20%</span>
+                <div class="card-amount">
+
+
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <div class="card-discount-price">
+                      <span>55.4 руб.</span>
+                    </div>
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+
+            </div>
+            <details class="more">
+
+              <summary></summary>
+              <div class="card-amount-wrapper">
+                <div>
+                  <span class="card-amount-disc">-20%</span>
+                  <div class="card-amount">
+
+
+                    <div class="card-ves">1кг</div>
+                    <div>
+                      <div class="card-price">
+                        <span>42.4 руб.</span>
+                      </div>
+                      <div class="card-discount-price">
+                        <span>55.4 руб.</span>
+                      </div>
+                    </div>
+                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+
+              </div>
+
+
+
+            </details>
+          </div>
+
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="multiple-items__item slider-product">
+        <div class="catalog-categories_col">
+          <div class="catalog-categories-item bondbox2">
+            <div class="catalog-categories-item-img">
+
+              <a href="/catalog-product.html"><img src="@img/tovar/tovar.png" alt="tovar"></a>
+            </div>
+            <div class="catalog-categories-item-info">
+              <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+            </div>
+            <div class="card-amount-wrapper">
+              <div>
+                <span class="card-amount-disc">-20%</span>
+                <div class="card-amount">
+
+
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <div class="card-discount-price">
+                      <span>55.4 руб.</span>
+                    </div>
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+
+            </div>
+            <details class="more">
+
+              <summary></summary>
+              <div class="card-amount-wrapper">
+                <div>
+                  <span class="card-amount-disc">-20%</span>
+                  <div class="card-amount">
+
+
+                    <div class="card-ves">1кг</div>
+                    <div>
+                      <div class="card-price">
+                        <span>42.4 руб.</span>
+                      </div>
+                      <div class="card-discount-price">
+                        <span>55.4 руб.</span>
+                      </div>
+                    </div>
+                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+
+              </div>
+
+
+
+            </details>
+          </div>
+
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="multiple-items__item slider-product">
+        <div class="catalog-categories_col">
+          <div class="catalog-categories-item bondbox2">
+            <div class="catalog-categories-item-img">
+
+              <a href="/catalog-product.html"><img src="@img/tovar/tovar.png" alt="tovar"></a>
+            </div>
+            <div class="catalog-categories-item-info">
+              <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+            </div>
+            <div class="card-amount-wrapper">
+              <div>
+                <span class="card-amount-disc">-20%</span>
+                <div class="card-amount">
+
+
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <div class="card-discount-price">
+                      <span>55.4 руб.</span>
+                    </div>
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+              <div class="card-amount">
+                <div class="card-ves">1кг</div>
+                <div>
+                  <div class="card-price">
+                    <span>42.4 руб.</span>
+                  </div>
+                  <!-- <div class="card-discount-price">
+                            <span>42.4 руб.</span>
+                        </div> -->
+                </div>
+                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+              </div>
+
+            </div>
+            <details class="more">
+
+              <summary></summary>
+              <div class="card-amount-wrapper">
+                <div>
+                  <span class="card-amount-disc">-20%</span>
+                  <div class="card-amount">
+
+
+                    <div class="card-ves">1кг</div>
+                    <div>
+                      <div class="card-price">
+                        <span>42.4 руб.</span>
+                      </div>
+                      <div class="card-discount-price">
+                        <span>55.4 руб.</span>
+                      </div>
+                    </div>
+                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+                <div class="card-amount">
+                  <div class="card-ves">1кг</div>
+                  <div>
+                    <div class="card-price">
+                      <span>42.4 руб.</span>
+                    </div>
+                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                  </div>
+                  <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                </div>
+
+              </div>
+
+
+
+            </details>
+          </div>
+
+        </div>
+      </div>
+      <!-- 4 -->
+    </div>
+    <!-- slider3 end-->
+
+
+
+
+    <br>
+
+
+    <script>
+      // accordion styles
+      document.addEventListener('DOMContentLoaded', function() {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    const toggleButton = document.querySelector('.toggle-button');
+    const additionalText = document.querySelector('.additional-text');
+   
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            const isActive = item.classList.contains('active');
+
+            // Закрываем все открытые элементы
+            document.querySelectorAll('.accordion-item.active').forEach(activeItem => {
+                activeItem.classList.remove('active');
+            });
+
+            // Если текущий элемент не был активным, открываем его
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+
+  
+
+    // Убедитесь, что первый элемент открыт при загрузке страницы
+    document.querySelector('.accordion-item').classList.add('active');
+
+   
+});
+ </script>
+ <!--  -->
+ <script>
+  // ------------------показать еще в акордионе
+const textContainer = document.querySelector('.text-container');
+const hiddenText = document.querySelector('.hidden-text');
+const showMoreBtn = document.querySelector('.show-more-btn2');
+
+showMoreBtn.addEventListener('click', () => {
+ if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+   hiddenText.style.display = 'block';
+   textContainer.style.maxHeight = 'none';
+   textContainer.querySelector('.fade-out').style.display = 'none';
+   showMoreBtn.textContent = 'Скрыть';
+ } else {
+   hiddenText.style.display = 'none';
+   textContainer.style.maxHeight = '100px';
+   textContainer.querySelector('.fade-out').style.display = 'block';
+   showMoreBtn.textContent = 'Читать далее';
+ }
+})
+</script>
+<!--  -->
+    <script>
+      function decreaseQuantity() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
+        }
+      }
+
+      function increaseQuantity() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+      }
+    </script>
+    <script>
+      const cardAmounts = document.querySelectorAll('.card-amount');
+
+      cardAmounts.forEach(card => {
+        card.addEventListener('click', function () {
+          // Удаляем класс active у всех элементов
+          cardAmounts.forEach(c => c.classList.remove('active'));
+          // Добавляем класс active к текущему элементу
+          this.classList.add('active');
+        });
+      });
+    </script>
+    <script>
+      //   document.getElementById('openPopup').addEventListener('click', function() {
+      //     document.getElementById('popup').style.display = 'flex';
+      // });
+
+      // document.querySelector('.close-button').addEventListener('click', function() {
+      //     document.getElementById('popup').style.display = 'none';
+      // });
+      function closeWatchrazves() {
+        var quantityInput = document.querySelector('.quantity-input');
+        var watchrazves = document.querySelector('.watchrazves');
+        watchrazves.style.display = 'none';
+        quantityInput.style.display = 'block';
+      }
+
+      document.getElementById('razves').addEventListener('click', function () {
+        var quantityInput = document.querySelector('.quantity-input');
+        var watchrazves = document.querySelector('.watchrazves');
+
+        if (quantityInput.style.display !== 'none') {
+          quantityInput.style.display = 'none';
+          watchrazves.style.display = 'block';
+        } else {
+          quantityInput.style.display = 'block';
+          watchrazves.style.display = 'none';
+        }
+      });
+
+
+    </script>
+  </main>
+  @@include('html/footer.html',{})
+
+
+</body>
+
+</html>

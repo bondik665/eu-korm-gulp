@@ -1,0 +1,41 @@
+.wrapper-404{
+   width: 1312px;
+   text-align: center;
+   margin-top: 120px;
+}
+.wrapper-404__text{
+    width: 644px;
+    height: 84px;
+    margin: 0 auto;
+
+}
+.wrapper-404__text h1{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #16151C;
+}
+.wrapper-404__text p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #80808A;
+}
+.wrapper-404__btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wrapper-404__btn button{
+    width: 210px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #00A743;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+}

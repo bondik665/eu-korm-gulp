@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"history-profile"
+})
+
+<body>
+    @@include('html/header.html',{})
+    <main>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li><a href="https://vashakrovlya.by">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.7069 2.29279C10.5194 2.10532 10.2651 2 9.99992 2C9.73475 2 9.48045 2.10532 9.29292 2.29279L2.29292 9.29279C2.11076 9.48139 2.00997 9.73399 2.01224 9.99619C2.01452 10.2584 2.11969 10.5092 2.3051 10.6946C2.49051 10.88 2.74132 10.9852 3.00352 10.9875C3.26571 10.9897 3.51832 10.8889 3.70692 10.7068L3.99992 10.4138V16.9998C3.99992 17.265 4.10528 17.5194 4.29281 17.7069C4.48035 17.8944 4.7347 17.9998 4.99992 17.9998H6.99992C7.26514 17.9998 7.51949 17.8944 7.70703 17.7069C7.89456 17.5194 7.99992 17.265 7.99992 16.9998V14.9998C7.99992 14.7346 8.10528 14.4802 8.29281 14.2927C8.48035 14.1051 8.7347 13.9998 8.99992 13.9998H10.9999C11.2651 13.9998 11.5195 14.1051 11.707 14.2927C11.8946 14.4802 11.9999 14.7346 11.9999 14.9998V16.9998C11.9999 17.265 12.1053 17.5194 12.2928 17.7069C12.4803 17.8944 12.7347 17.9998 12.9999 17.9998H14.9999C15.2651 17.9998 15.5195 17.8944 15.707 17.7069C15.8946 17.5194 15.9999 17.265 15.9999 16.9998V10.4138L16.2929 10.7068C16.4815 10.8889 16.7341 10.9897 16.9963 10.9875C17.2585 10.9852 17.5093 10.88 17.6947 10.6946C17.8801 10.5092 17.9853 10.2584 17.9876 9.99619C17.9899 9.73399 17.8891 9.48139 17.7069 9.29279L10.7069 2.29279Z"
+                                    fill="#4B515B"></path>
+                            </svg>
+                            Главная</a></li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.33325 6.66699L11.6666 10.0003L8.33325 13.3337" stroke="#9CA3AF"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <li><span> История заказов </span></li>
+                </ul>
+            </div>
+        </div>
+<h1>История заказов </h1>
+        <div class="order-history">
+            <div class="order-history-header">
+                <span class="name-tovar">Номер заказа</span>
+                <span>Дата</span>
+                <span>Сумма</span>
+                <span>Статус</span>
+            </div>
+            <br>
+            <!-- карт 1 -->
+            <div class="order-item">
+                <span class="order-number">№ 12345</span>
+                <span class="order-date">2023-10-01,15-43</span>
+                <span class="order-total">1500,15 руб.</span>
+                <span class="order-status-succes">Выполнен</span>
+                <button class="repeat-button">Повторить</button>
+                <button class="expand-button">Развернуть </button>
+            </div>
+            <div class="order-details" style="display: none; opacity: 0; visibility: hidden;">
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750,66 руб.</span>
+                </div>
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750.00 руб.</span>
+                </div>
+            </div>
+            <br>
+            <!-- 2 -->
+            <div class="order-item">
+                <span class="order-number">№ 12345</span>
+                <span class="order-date">2023-10-01,15-43</span>
+                <span class="order-total">1500,15 руб.</span>
+                <span class="order-status-succes">Выполнен</span>
+                <button class="repeat-button">Повторить</button>
+                <button class="expand-button">Развернуть </button>
+            </div>
+            <div class="order-details" style="display: none; opacity: 0; visibility: hidden;">
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750,66 руб.</span>
+                </div>
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750.00 руб.</span>
+                </div>
+            </div>
+            <!-- 2end -->
+             <br>
+            <!-- 3 -->
+            <div class="order-item">
+                <span class="order-number">№ 12345</span>
+                <span class="order-date">2023-10-01,15-43</span>
+                <span class="order-total">1500,15 руб.</span>
+                <span class="order-status-succes">Выполнен</span>
+                <button class="repeat-button">Повторить</button>
+                <button class="expand-button">Развернуть </button>
+            </div>
+            <div class="order-details" style="display: none; opacity: 0; visibility: hidden;">
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750,66 руб.</span>
+                </div>
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750.00 руб.</span>
+                </div>
+            </div>
+            <!-- 3end -->
+             <br>
+             <!-- 4 -->
+             <div class="order-item">
+                <span class="order-number">№ 12345</span>
+                <span class="order-date">2023-10-01,15-43</span>
+                <span class="order-total">1500,15 руб.</span>
+                <span class="order-status-load">Ожидается</span>
+                <button class="repeat-button">Повторить</button> 
+                <button class="expand-button">Развернуть </button>
+            </div>
+            <div class="order-details" style="display: none; opacity: 0; visibility: hidden;">
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750,66 руб.</span>
+                </div>
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750.00 руб.</span>
+                </div>
+            </div>
+            <!-- 4end -->
+             <br>
+             <!-- 5 -->
+             <div class="order-item">
+                <span class="order-number">№ 12345</span>
+                <span class="order-date">2023-10-01,15-43</span>
+                <span class="order-total">1500,15 руб.</span>
+                <span class="order-status-cancel">Отменен</span>
+               <button class="repeat-button">Повторить</button> 
+                <button class="expand-button">Развернуть </button>
+            </div>
+            <div class="order-details" style="display: none; opacity: 0; visibility: hidden;">
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750,66 руб.</span>
+                </div>
+                <div class="order-detail-item">
+                    <img src="@img/tovar/tovar.png" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <span class="product-name">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</span>
+                        <span class="product-sku">Артикул: 14447</span>
+                    </div>
+                    <span class="product-quantity">2 шт</span>
+                    <span class="product-price">750.00 руб.</span>
+                </div>
+            </div>
+            <!-- 5end -->
+        </div>
+
+
+    </main>
+    @@include('html/footer.html',{})
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const expandButtons = document.querySelectorAll('.expand-button');
+
+    expandButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const orderDetails = button.closest('.order-item').nextElementSibling;
+            if (orderDetails.style.display === 'none' || orderDetails.style.display === '') {
+                orderDetails.style.display = 'flex';
+                setTimeout(() => {
+                    orderDetails.style.opacity = '1';
+                    orderDetails.style.visibility = 'visible';
+                }, 50); // Небольшая задержка перед началом анимации
+                button.textContent = 'Свернуть';
+            } else {
+                orderDetails.style.opacity = '0';
+                orderDetails.style.visibility = 'hidden';
+                setTimeout(() => {
+                    orderDetails.style.display = 'none';
+                }, 500); // Задержка равна времени анимации
+                button.textContent = 'Развернуть';
+            }
+        });
+    });
+});
+    </script>
+</body>
+
+</html>

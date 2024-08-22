@@ -1,0 +1,122 @@
+.breadcrumbs {
+    padding: 16px 0
+}
+.breadcrumbs .breadcrumbs__container ul {
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.breadcrumbs ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.breadcrumbs ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px
+}
+
+.breadcrumbs ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    color: #4b515b;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+.breadcrumbs ul li a svg path {
+    fill: #4b515b;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+.breadcrumbs ul li a:hover {
+    color: #05a23d
+}
+
+.breadcrumbs ul li a:hover svg path {
+    fill: #05a23d
+}
+
+.breadcrumbs ul li>span {
+    color: #9ca3af
+}
+
+//--------------------------- 
+.about-title-wrapper, .about-banner ,.about-description-text, .lazy {
+    width: 1090px;
+}
+.about-title-wrapper h2{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #16151C;
+}
+.about-description-text p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #16151C;
+    font-weight: 400;
+}
+
+.about-title-info{
+    width: 644px;
+}
+.about-title-info h2{
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 800;
+
+}
+
+
+.about-image-wrapper{
+    width: 867px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cert-wrapper-text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #80808A;
+    font-weight: 400;
+}
+.cert-wrapper-text h2{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 800;
+    color: #101828;
+}
+
+
+
+// ----------------------------------

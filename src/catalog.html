@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Каталог"
+})
+
+<body>
+  @@include('html/header.html',{})
+  <main>
+    <!-- крошки -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__container">
+        <ul>
+          <li>
+            <a href="">Главная</a><span>/</span>
+          </li>
+          <li>
+            <a href="">Каталог</a><span>/</span>
+          </li>
+          <li>
+            <a href="">Зоотовары</a><span>/</span>
+          </li>
+          <li>
+            <a href="">Товары для...</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- крошки конец -->
+    <div class="catalog-page" style="display: flex;">
+
+      <div class="side-bar-f">@@include('./sidebar.html', {})</div>
+
+      <div class="catalog-main">
+        <h1>Сухой корм для собак</h1>
+        <div class="title-ackcii">
+          <div class="catalog-filter__container-nav">
+            <div class="nav-btn-wrapper">
+              <img src="@img/tovar/fire.png" alt="">
+              <a href="#" class="link-nav-catalog">
+
+                Акции</a>
+            </div>
+            <div class="nav-btn-wrapper">
+              <img src="@img/tovar/present.png" alt="">
+              <a href="#" class="link-nav-catalog">
+
+                Подарок</a>
+            </div>
+            <div class="nav-btn-wrapper">
+              <img src="@img/tovar/light.png" alt="">
+              <a href="#" class="link-nav-catalog">
+
+                Новинка</a>
+            </div>
+            <div class="nav-btn-wrapper">
+              <img src="@img/tovar/award.png" alt="">
+              <a href="#" class="link-nav-catalog">
+
+                Уценка</a>
+            </div>
+
+
+          </div>
+
+          <div class="sort-link-wrapper">
+            <img src="@img/tovar/Arrow.png" alt="">
+            <form class="sort-link-wrapper-form" method="get">
+
+              <select name="orderby" class="orderby" aria-label="Заказ в магазине">
+
+                <option value="popularity" selected="selected">По популярности</option>
+                <option value="date">По новизне</option>
+                <option value="price">По возрастанию</option>
+                <option value="price-desc">По убыванию</option>
+              </select>
+              <input type="hidden" name="paged" value="1">
+            </form>
+            <button class="btn-filter-mob">фильтр</button>
+          </div>
+          
+          <div class="side-bar-m">@@include('./sidebar.html', {})</div>
+
+        </div>
+
+
+
+
+
+
+        <br>
+
+        <!-- категориикаталога категории-->
+        @@include('./catalog-categories.html', {})
+        <!-- ккатегории каталога категории конец-->
+
+        <!--  -->
+        <div class="container">
+          <div class="text-container">
+            <p>
+              Чтобы собака была активной и здоровой, ей нужен сбалансированный рацион. Советуем выбирать сухой корм двух
+              классов: Качественное питание поможет не допустить проблем со здоровьем в будущем. Благодаря высокой
+              питательной ценности питомцу хватит небольшой порции, чтобы насытиться и получить необходимое количество
+              полезных веществ.
+
+            </p>
+            <div class="fade-out"></div>
+          </div>
+          <div class="hidden-text">
+            <p>
+              вы найдёте рационы не только предложенных, но и других брендов. Чтобы купить корм для собак в интернет
+              магазине, оформляйте заказ через корзину. Менеджер перезвонит с вами, согласует наличие позиций и время
+              доставки.
+            </p>
+          </div>
+          <button class="show-more-btn">Показать еще</button>
+        </div>
+        <!--  -->
+
+      </div>
+
+    </div>
+
+    <script>
+      // ------------------показать еще в каталоге 
+      const textContainer = document.querySelector('.text-container');
+      const hiddenText = document.querySelector('.hidden-text');
+      const showMoreBtn = document.querySelector('.show-more-btn');
+
+      showMoreBtn.addEventListener('click', () => {
+        if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+          hiddenText.style.display = 'block';
+          textContainer.style.maxHeight = 'none';
+          textContainer.querySelector('.fade-out').style.display = 'none';
+          showMoreBtn.textContent = 'Скрыть';
+        } else {
+          hiddenText.style.display = 'none';
+          textContainer.style.maxHeight = '100px';
+          textContainer.querySelector('.fade-out').style.display = 'block';
+          showMoreBtn.textContent = 'Читать далее';
+        }
+      })
+    </script>
+
+
+<!-- filter mob -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const btnFilterMob = document.querySelector('.btn-filter-mob');
+    const sideBarM = document.querySelector('.side-bar-m');
+
+    btnFilterMob.addEventListener('click', function() {
+        sideBarM.classList.toggle('active');
+    });
+});
+</script>
+  </main>
+  @@include('html/footer.html',{})
+</body>
+
+</html>

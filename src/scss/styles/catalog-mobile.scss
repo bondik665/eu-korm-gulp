@@ -1,0 +1,150 @@
+@media(max-width:767px) {
+
+    // скпываю  пока фильтр--------------------------
+    .side-bar-f {
+        display: none;
+    }
+
+    // -----------------
+    .title-ackcii {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        width: 100%;
+        
+    }
+
+    .catalog-filter__container-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+       
+    }
+    .nav-btn-wrapper {
+        width: 12rem;
+     
+    }
+
+    .nav-btn-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-btn-wrapper img {
+        margin-right: 5px;
+    }
+
+    .sort-link-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .sort-link-wrapper img {
+        margin-right: 5px;
+    }
+
+
+
+    // ------------------------------------------------
+    // убир отступ 
+    .catalog-main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .title-ackcii {
+        width: 100%;
+      
+    }
+
+    .catalog-filter__container-nav {
+        width: 100%;
+      
+    }
+
+    // карточки
+    .catalog-categories {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        -moz-column-gap: 16px;
+        column-gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .card-amount-wrapper img {
+        width: 100%;
+    }
+    // для фильтра моб-------------
+    .btn-filter-mob {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .side-bar-m {
+        display: none;
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .side-bar-m.active {
+        display: block;
+    }
+    .filter-container {
+       
+        width: 100%;
+    }
+}
+
+
+@media (max-width:414px) {
+    .bondbox {
+        width: 24rem;
+    }
+    .nav-btn-wrapper {
+        width: 11.5rem;
+     
+    }
+
+
+
+}
+
+@media (max-width:390px) {
+    .bondbox {
+        width: 22rem;
+    }
+
+    .nav-btn-wrapper {
+        width: 10.8rem;
+     
+    }
+
+}
+
+@media (max-width:360px) {
+    .bondbox {
+        width: 20.7rem;
+    }
+
+    .nav-btn-wrapper {
+        width: 10rem;
+     
+    }
+
+}
+
+// скрываем филтр моб и кнопку
+@media(min-width:768px){
+    .side-bar-m,.btn-filter-mob{display: none;}
+}
+

@@ -1,0 +1,18 @@
+.catalog-categories-search {
+    width: 1312px;
+}
+
+
+.catalog-categories-search {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 колонки равной ширины */
+    gap: 10px;
+}
+
+.sort-link-wrapper-search {
+    width: 1312px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom:30px;
+}

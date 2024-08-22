@@ -1,0 +1,198 @@
+.order-details {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.order-total, .product-price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #16151C;
+}
+
+
+.order-history {
+    width: 1312px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 400px;
+}
+
+.order-history-header {
+    border: none !important;
+}
+
+.order-history-header,
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #E5E5EB;
+    border-radius: 10px;
+}
+
+.order-history-header span,
+.order-item span {
+    flex: 1;
+}
+
+.order-history-header {
+    width: 1080px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #344054;
+}
+
+.repeat-button,
+.expand-button {
+    margin-left: 10px;
+}
+
+.order-details {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.order-detail-item {
+    width: 840px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+   
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.product-quantity {
+    width: 200px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #16151C;
+}
+
+.product-sku {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.product-quantity,
+.product-price {
+    margin-left: 10px;
+}
+
+.order-status-succes {
+    color: #00A743;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.order-status-cancel {
+    color: #80808A;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.order-status-load {
+    color: #FF9F48;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+// 
+.repeat-button {
+    width: 116px;
+    font-size: 16px;
+    color: #80808A;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.repeat-button:hover,
+.expand-button:hover {
+    background-color: #e0e0e0;
+    /* Пример цвета фона при наведении */
+    color: green;
+}
+
+.expand-button {
+    width: 120px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.expand-button:hover {
+    background-color: #e0e0e0;
+}
+
+.expand-button {
+    width: 120px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.expand-button:hover {
+    background-color: #e0e0e0;
+}
+
+.expand-button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #000;
+    /* Цвет стрелки */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.expand-button:hover::after {
+    opacity: 1;
+}

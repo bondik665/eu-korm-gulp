@@ -1,0 +1,245 @@
+.catalog-categories {
+    width: 978px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 16px;
+    -webkit-column-gap: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+    margin-bottom: 32px
+}
+
+.catalog-categories-item {
+    display: block;
+    width: 310px;
+    height: 100%;
+    border: 1px solid #e7e9ec;
+    border-radius: 16px;
+}
+
+.catalog-categories-item-img img {
+    margin: 20px auto 0px auto;
+    display: block;
+    width: 278px;
+    height: 296px;
+}
+
+.catalog-categories-item-info {
+    text-align: center;
+
+}
+
+.card-amount {
+    width: 278px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E5E5EB;
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+
+}
+
+.card-amount-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+}
+
+.more {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+// развернуть/свернуть
+details summary::after {
+    content: "Развернуть";
+
+}
+
+details[open] summary::after {
+    content: "Свернуть";
+
+}
+
+// развернуть/свернуть end
+
+
+.card-amount-disc {
+    font-size: 10px;
+    color: #333;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    margin-bottom: 5px;
+    background-color: #F55555;
+    border-radius: 8px;
+    width: 30px;
+    height: 16px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0.9rem;
+    left: 1.6rem;
+    color: #E5E5EB;
+
+}
+
+.card-amount img {
+    width: 44px;
+    height: 44px;
+    padding-top: 3px;
+}
+
+.card-discount-price span {
+    font-size: 12px;
+    color: #80808A;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.card-discount-price {
+    font-size: 12px;
+    color: #80808A;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+
+.card-price {
+    font-size: 16px;
+    color: #16151C;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.card-amount-wrapper-img {
+    width: 310px;
+    height: 100%;
+}
+
+.pagination-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+
+@-webkit-keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+.rollIn {
+    -webkit-animation-name: rollIn;
+    animation-name: rollIn;
+  }
+  
+  @-webkit-keyframes rollIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes rollIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  

@@ -1,0 +1,188 @@
+@media(max-width:767px) {
+
+    .registration-wrapper {
+        width: 100%;
+        background-color: #fafafc;
+        color: #16151c;
+        padding: 26px 38px 26px 60px;
+        display: flex;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+    .checkout-main-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .cartres-block {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        flex-wrap: wrap;
+    }
+
+    .checkout-form {
+        width: 100%;
+    }
+
+    .delivery-options {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    #city {
+        width: 100%;
+    }
+
+    #address {
+        width: 100%;
+    }
+
+    .form-secod-block {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    #apartment,
+    #building,
+    #house {
+        width: 100%;
+    }
+
+    .delivery-option {
+        width: 100%;
+        height: 115px;
+        border: 1px solid #e5e5eb;
+        border-radius: 10px;
+        padding: 16px;
+    }
+
+    .payment {
+        width: 100%;
+    }
+
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .form-container-2 {
+        width: 100%;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .delivery-option p {
+        text-align: left;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #80808a;
+        width: 90%;
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .checkout-main-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .checkout-form {
+        width: 100%;
+    }
+
+    #address {
+        width: 100%;
+    }
+
+    #city {
+        width: 240px;
+    }
+
+    .cartres-block {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .delivery-options {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+    }
+
+    .delivery-option p {
+        text-align: left;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #80808a;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .checkout-main-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .checkout-form {
+        width: 100%;
+    }
+
+    #address {
+        width: 100%;
+    }
+
+    #city {
+        width: 240px;
+    }
+
+    #apartment,
+    #building,
+    #house {
+        width: 100%;
+    }
+
+    .cartres-block {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    // .delivery-options {
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+    .delivery-option label{
+        font-size: 12px;
+        font-weight: 700;
+        color: #000;
+        line-height: 20px;
+    }
+}
+

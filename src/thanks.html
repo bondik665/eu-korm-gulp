@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"thanks"
+})
+
+<body>
+    @@include('html/header.html',{})
+    <main>
+
+
+        <div class="wrapper-thanks-main">
+            <h1>Спасибо за заказ!</h1>
+            <div class="wrapper-thanks">
+
+                <div class="thanks-content-box">
+                    <p>Номер заказа: <span>463875</span></p>
+                    <p>Мы отправили чек на вашу почту, менеджер свяжется с вами в ближайшее время для подтверждения
+                        заказа.</p>
+                    <div class="wrapper-thank__btn">
+                        <form action="/" target="_blank">
+                            <button class="go-home-btn">Вернуться на главную</button>
+                        </form>
+                        <form action="#" target="_blank">
+                            <button class="go-lc-btn">Перейти в личный кабинет</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="thank-img">
+                    <img src="@img/404/thank.png" alt="thank">
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </main>
+    @@include('html/footer.html',{})
+
+
+</body>
+
+</html>

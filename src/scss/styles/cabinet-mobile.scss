@@ -1,0 +1,48 @@
+@media(max-width:767px){
+
+    .form3{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+
+    // уббрали  картинку
+    .yellow-wrapper-mail .image-block{
+        display: none;
+    }
+    .yellow-wrapper-mail {
+        width: 100%;
+        height: auto;
+      
+    }
+    .yellow-wrapper-mail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 200px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        
+    }
+    .cabinet-email-text {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #16151c;
+    }
+    .yellow-size-form input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form3 input{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
+    
+
+    <link rel="stylesheet" href="css/style.min.css?_v=20240822151930">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css?_v=20240822151930">
+    
+    
+    <title>cart</title>
+</head>
+
+
+<body>
+    <header>
+  <!-- header desc -->
+  <div class="main-header">
+
+    <div class="header-logo-block animated pulse">
+      <div class="menu-header-main-logo">
+        <a href="/"><picture><source srcset="img/logo/logo-e.webp" type="image/webp"><img src="img/logo/logo-e.png" alt=""></picture></a>
+      </div>
+      <div class="menu-header-main-phone">
+        <picture><source srcset="img/logo/iconPhone.webp" type="image/webp"><img src="img/logo/iconPhone.png" alt=""></picture>
+        <a href="tel:+37544757000">+375(44)757 00 00</a>
+        <div>Пн-пт 10:00 - 18:00</div>
+      </div>
+    </div>
+
+    <div class="list-menu-head-block animated pulse">
+      <div class="list-menu-head">
+        <a href="/about.html">О нас</a>
+        <a href="/delivery.html">Доставка</a>
+        <a href="/oplata.html">Оплата</a>
+        <a href="/reviews.html">Отзывы</a>
+        <a href="/shops.html">Магазины</a>
+      </div>
+      <div class="mobile-block" style="display: flex;flex-wrap: wrap;gap: 10px;">
+        <a href="#" class="register-menu-btn"><picture><source srcset="img/logo/iconRegis.webp" type="image/webp"><img src="img/logo/iconRegis.png" alt=""></picture></a>
+
+        <a href="/cart.html"><picture><source srcset="img/logo/iconCart.webp" type="image/webp"><img src="img/logo/iconCart.png" alt=""></picture></a>
+
+        <a class="unique-menu-trigger" id="uniqueOpenMobileMenu"><picture><source srcset="img/logo/menumob.webp" type="image/webp"><img src="img/logo/menumob.png" alt=""></picture></a>
+      </div>
+
+
+
+
+
+    </div>
+    <div id="uniqueMobileMenuContainer" class="unique-mobile-menu-container">
+      <div class="unique-mobile-menu-header">
+        <div class="unique-mobile-menu-buttons">
+          меню
+          <!-- <a href="#" class="unique-mobile-login-btn" id="uniqueLoginButton">Вход</a> -->
+          <!-- <a href="/cabinet.html" class="unique-mobile-register-btn" id="uniqueRegisterButton">Регистрация</a> -->
+        </div>
+        <button id="uniqueCloseMobileMenu" class="unique-mobile-close-btn">×</button>
+      </div>
+      <div class="unique-mobile-menu-content">
+        <div class="unique-mobile-menu-info">
+          <p>+375(44)757 00 00</p>
+          <p>График работы: Пн-пт 10:00 - 18:00</p>
+        </div>
+        <ul class="unique-mobile-nav-list">
+          <li><a href="/about.html">О компании</a></li>
+          <li><a href="/delivery.html">Доставка</a></li>
+          <li><a href="/oplata.html">Оплата</a></li>
+          <li><a href="/reviews.html">Отзывы</a></li>
+          <li><a href="/shops.html">Магазины</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  -->
+
+<!-- popup registaration -->
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="registration-popup" id="registrationPopup">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h2 class="popup-title">Регистрация</h2>
+      <label for="emailInput" class="form-label">Электронная почта*</label>
+      <input type="email" id="emailInput" class="form-input" placeholder="Ваш E-mail" required>
+      <label for="phoneInput" class="form-label">Номер телефона*</label>
+      <input type="text" id="phoneInput" class="form-input" placeholder="+375 (XX) XXX-XX-XX" required>
+      <div class="password-toggle">
+        <label for="passwordInput" class="form-label">Пароль*</label>
+        <input type="password" id="passwordInput" class="form-input" required>
+        <i class="eye-icon fas fa-eye-slash" onclick="togglePassword('passwordInput')"></i>
+      </div>
+      <div class="text-reg">Пароль должен состоять не менее чем из 8 символов</div>
+      <div class="password-toggle">
+        <label for="confirmPasswordInput" class="form-label">Подтверждение пароля*</label>
+        <input type="password" id="confirmPasswordInput" class="form-input" required>
+        <i class="eye-icon fas fa-eye-slash" onclick="togglePassword('confirmPasswordInput')"></i>
+      </div>
+      <div class="checkbox-group">
+        <label class="checkbox-label"><input type="checkbox" id="dataProcessingCheckbox" required> Согласие на обработку
+          персональных данных</label>
+        <label class="checkbox-label"><input type="checkbox" id="newsletterCheckbox"> Согласие на получение
+          рассылки</label>
+      </div>
+      <button type="button" class="register-button" onclick="register()">Зарегистрироваться</button>
+      <div class="bottom-text">
+        <span>Уже зарегистрированы?</span>
+        <a href="#" class="login-link">Войти</a>
+      </div>
+    </div>
+    <!--  -->
+  </div>
+  <!--  mega-menu-->
+
+  <div class="navbar ">
+
+    <div class="navbar-block">
+      <div class="iconBlock">
+        <a href="#home"><picture><source srcset="img/logo/iconSale.webp" type="image/webp"><img src="img/logo/iconSale.png" alt=""></picture>Акции</a><span class="custom-span"></span>
+      </div>
+
+      <div class="dropdown-block">
+        <div class="iconBlock">
+
+          <a href="#home">Кошки</a><span class="custom-span"></span>
+        </div>
+        <div class="dropdown-content-block">
+
+          <div class="row-block">
+            <div class="column-block">
+              <!-- <h3>Корма</h3> -->
+              <a href="/catalog.html">Жать сюда</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="dropdown-block">
+        <div class="iconBlock">
+
+          <a href="#home">Собаки</a><span class="custom-span"></span>
+        </div>
+        <div class="dropdown-content-block">
+
+          <div class="row-block">
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="dropdown-block">
+        <div class="iconBlock">
+
+          <a href="#home">Бренды</a><span class="custom-span"></span>
+        </div>
+        <div class="dropdown-content-block">
+
+          <div class="row-block">
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="iconBlock">
+        <a href="#">ветАптека</a><span class="custom-span"></span>
+      </div>
+      <div class="iconBlock">
+        <a href="#news">Уценка</a>
+      </div>
+
+    </div>
+    <!-- конец mega -menu -->
+
+
+
+
+
+    <!--поиск-->
+    <div class="search_block">
+      <form>
+
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Поиск по сайту">
+          <button class="search-button">
+            <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Поиск"></picture>
+          </button>
+          <div class="search-suggestions" style="display: none;">
+            <ul>
+              <li>Вариант 1</li>
+              <li>Вариант 2</li>
+              <li>Вариант 3</li>
+            </ul>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- mega-menu-mobile -->
+  <div class="mobile-wrap">
+    <div class="mobile-navbar">
+      <div class="mobile-hamburger" onclick="toggleMobileMenu()">
+        <button class="catalog-button-purple"><span class="hamburger-icon"></span>Каталог</button>
+
+      </div>
+      <div class="mobile-search-block">
+        <div class="mobile-search-container">
+          <input type="text" class="mobile-search-input" placeholder="Поиск по сайту">
+          <button class="mobile-search-button">
+            <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Поиск"></picture>
+          </button>
+          <div class="mobile-search-suggestions" style="display: none;">
+            <ul>
+              <li>Вариант 1</li>
+              <li>Вариант 2</li>
+              <li>Вариант 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-close-button" onclick="toggleMobileMenu()">&times;</div>
+      <div class="mobile-menu-content">
+        <a href="#home">Акции</a>
+        <div class="mobile-dropdown" onclick="toggleDropdown(this)">
+          <a href="#home">Кошки</a>
+          <div class="mobile-dropdown-content">
+            <div class="mobile-row">
+              <div class="mobile-column">
+                <a href="/catalog.html">Жать сюда</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-dropdown" onclick="toggleDropdown(this)">
+          <a href="#home">Собаки</a>
+          <div class="mobile-dropdown-content">
+            <div class="mobile-row">
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-dropdown" onclick="toggleDropdown(this)">
+          <a href="#home">Бренды</a>
+          <div class="mobile-dropdown-content">
+            <div class="mobile-row">
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#">ветАптека</a>
+        <a href="#news">Уценка</a>
+      </div>
+    </div>
+
+    <!-- поиск мобила -->
+    <div class="mobile-search_block-987654">
+      <button class="mobile-search-button-123456" onclick="toggleSearchPopup()">
+        <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Поиск"></picture>
+      </button>
+    </div>
+
+    <div class="overlay-345678" id="overlay" onclick="closeSearchPopup()"></div>
+
+    <div class="mobile-search-popup-789012" id="searchPopup">
+      <input type="text" placeholder="Поиск по сайту" id="searchInput">
+      <button type="button" onclick="performSearch()">
+        <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Найти"></picture>
+      </button>
+    </div>
+    <!-- поиск end -->
+
+  </div>
+  <!-- end mobilemegamenu -->
+
+
+</header>
+
+
+
+<!-- для поиска -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchButton = document.querySelector('.search-button');
+    const searchSuggestions = document.querySelector('.search-suggestions');
+
+    searchButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      if (searchSuggestions.style.display === 'none') {
+        searchSuggestions.style.display = 'block';
+      } else {
+        searchSuggestions.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.search-container')) {
+        searchSuggestions.style.display = 'none';
+      }
+    });
+  });
+</script>
+<!-- form-register -->
+<script>
+  function openPopup() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('registrationPopup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('registrationPopup').style.display = 'none';
+  }
+
+  function togglePassword(id) {
+    const input = document.getElementById(id);
+    const icon = input.nextElementSibling;
+
+    if (input.type === "password") {
+      input.type = "text";
+      icon.classList.remove("fa-eye-slash");
+      icon.classList.add("fa-eye");
+    } else {
+      input.type = "password";
+      icon.classList.remove("fa-eye");
+      icon.classList.add("fa-eye-slash");
+    }
+  }
+
+  function register() {
+    // Логика регистрации
+    alert('Регистрация прошла успешно!');
+  }
+
+  document.querySelector('.register-menu-btn').addEventListener('click', openPopup);
+</script>
+
+<!-- mobile-mega-menu -->
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  function toggleDropdown(element) {
+    element.classList.toggle('open');
+  }
+</script>
+
+
+
+<!-- mob поиск -->
+<script>
+  function toggleSearchPopup() {
+    const popup = document.getElementById('searchPopup');
+    const overlay = document.getElementById('overlay');
+    popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+    overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function closeSearchPopup() {
+    const popup = document.getElementById('searchPopup');
+    const overlay = document.getElementById('overlay');
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+
+  function performSearch() {
+    const input = document.getElementById('searchInput');
+    const query = input.value;
+    alert('Выполняется поиск: ' + query);
+    // Здесь можно добавить логику для выполнения поиска
+  }
+</script>
+
+
+<!-- моб меню -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const openMobileMenu = document.getElementById('uniqueOpenMobileMenu');
+    const closeMobileMenu = document.getElementById('uniqueCloseMobileMenu');
+    const mobileMenuContainer = document.getElementById('uniqueMobileMenuContainer');
+
+    if (openMobileMenu && closeMobileMenu && mobileMenuContainer) {
+      openMobileMenu.addEventListener('click', function () {
+        mobileMenuContainer.classList.add('open');
+      });
+
+      closeMobileMenu.addEventListener('click', function () {
+        mobileMenuContainer.classList.remove('open');
+      });
+    } else {
+      console.error('Один из элементов не найден');
+    }
+  });
+</script>
+
+
+    <main>
+
+        <div class="cart-header">
+            <h2>В корзине 2 товара</h2>
+        </div>
+        <div class="cart-wrapper-info">
+
+
+            <div class="cart-item-header">
+                <span class="name-tovar">Наименование</span>
+                <span>Цена</span>
+                <span>Количество</span>
+                <span class="name-price">Сумма</span>
+            </div>
+            <br>
+            
+            <div class="cart-main-box">
+                <div class="cart-tovar-box">
+                    <div class="cart-item-wrapper">
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <picture><source srcset="img/tovar/tovar.webp" type="image/webp"><img src="img/tovar/tovar.png" alt="Товар 1"></picture>
+                            </div>
+                            <div class="item-name">
+                                <p>Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+                                <span>Артикул: 70376_14447</span>
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount">15,55 руб</span>
+                                    <span class="price-without-discount">26,55 руб</span>
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti">-</button>
+                                    <input type="text" id="quantity" value="1" readonly>
+                                    <button class="btn-cart-quantiti">+</button>
+                                </div>
+                                <div class="item-total">15,55 руб</div>
+                                <div class="item-remove">
+                                    <span>&times;</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <!--  -->
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <picture><source srcset="img/tovar/tovar.webp" type="image/webp"><img src="img/tovar/tovar.png" alt="Товар 1"></picture>
+                            </div>
+                            <div class="item-name">
+                                <div class="present-cart"><picture><source srcset="img/cart-folder/present-cart.webp" type="image/webp"><img src="img/cart-folder/present-cart.png" alt=""></picture>Подарок
+                                </div>
+                                <p>Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount">0 руб</span>
+
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti">-</button>
+                                    <input type="text" id="quantity" value="1" readonly>
+                                    <button class="btn-cart-quantiti">+</button>
+                                </div>
+                                <div class="item-total">0 руб</div>
+                                <div class="item-remove-empty">
+                                    <span>&nbsp</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <!--  -->
+
+                    </div>
+
+                    
+
+                    <br>
+
+                    <div class="cart-item-wrapper">
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <picture><source srcset="img/tovar/tovar.webp" type="image/webp"><img src="img/tovar/tovar.png" alt="Товар 1"></picture>
+                            </div>
+                            <div class="item-name">
+                                <p>Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+                                <span>Артикул: 70376_14447</span>
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount">15,55 руб</span>
+                                    <span class="price-without-discount">20,55 руб</span>
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti">-</button>
+                                    <input type="text" id="quantity" value="1" readonly>
+                                    <button class="btn-cart-quantiti">+</button>
+                                </div>
+                                <div class="item-total">15,55 руб</div>
+                                <div class="item-remove">
+                                    <span>&times;</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <!-- товар нет в наличии  -->
+                    <div class="cart-item-wrapper">
+                        <div class="cart-item">
+                            <div class="item-image" style="filter: grayscale(100%);">
+                                <picture><source srcset="img/tovar/tovar.webp" type="image/webp"><img src="img/tovar/tovar.png" alt="Товар 1"></picture>
+                            </div>
+                            <div class="item-name" >
+                                <p style="color: #80808A;">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+                                <span style="color: #80808A;">Артикул: 70376_14447</span>
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount" style="color: #80808A;">15,55 руб</span>
+                                    <span class="price-without-discount" style="color: #80808A;">20,55 руб</span>
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti" style="color: #80808A;">-</button>
+                                    <input type="text" id="quantity" value="1" readonly style="color: #80808A;">
+                                    <button class="btn-cart-quantiti" style="color: #80808A;">+</button>
+                                </div>
+                                <div class="item-total" style="color: #80808A;">15,55 руб</div>
+                                <div class="item-remove">
+                                    <span>&times;</span>
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+
+
+
+                    <!-- промокод -->
+                    <div class="promo-container">
+                        <input type="text" class="promo-input" placeholder="Ввести промокод">
+                        <button class="apply-button">Применить</button>
+                    </div>
+
+                    <!-- промо end -->
+               
+                </div>
+                
+                <div>
+                    <div class="cart-tovar-result">
+                        <div class="cart-element">
+                            <div class="cart-element-block">
+
+                                <div class="itogo-box">
+                                    <h4>Итого</h4>
+                                    <div><span>3 товара</span> <span class="weight">| 12кг</span></div>
+                                </div>
+
+                                <div class="final">
+                                    <div class="final-price-sum">Сумма <span>156 руб</span></div>
+                                    <div class="final-old-price">Скидка <span>-20 руб</span></div>
+                                    <div class="final-price">К оплате <span>156.79 руб</span></div>
+
+                                </div>
+
+                                <a href="/checkout.html" ><button class="add-to-cart-btn">Перейти к оформлению</button></a>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <div class="yellow-attention">
+                        <div>⚠️ 🚚 Вам не хватает <span>18.19 руб.</span> до бесплатной доставки!</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <br>
+
+        </div>
+
+    </main>
+    <footer class="footer">
+    <div class="footer-main">
+        <!--  -->
+        <div class="footer-first-block">
+            <div class="footer-logo-wrapper">
+                <picture><source srcset="img/logo/logo-e.webp" type="image/webp"><img class='logo-foot' src="img/logo/logo-e.png" alt=""></picture><a href="#"></a>
+                <p>Официальный дилер и импортёр кормов Bosch, Sanabelle, Adragna, Сhicopee и кормовых добавок Canina</p>
+
+            </div>
+
+            <div class="footer-contacts-wrapper">
+
+                <div class="footer-contacts-wrapper-link">
+                    <a href="tel:+37544757000" class="footer-link"><img src="img/logo/footerTel.png"
+                            alt="">+375(44)7570000</a>
+                </div>
+                <div class="footer-contacts-wrapper-link">
+                    <a href="#" class="footer-link"><picture><source srcset="img/logo/iconMail.webp" type="image/webp"><img src="img/logo/iconMail.png" alt=""></picture>evrokorm.by@gmail.com</a>
+                </div>
+                <div class="footer-contacts-wrapper-link">
+                    <a href="#" class="footer-link"><picture><source srcset="img/logo/iconMap.webp" type="image/webp"><img src="img/logo/iconMap.png" alt=""></picture>Хатежино, ул. Центральная,
+                        18Б/1</a>
+                </div>
+            </div>
+
+
+        </div>
+        <!--  -->
+        <div class="footer-second-block">
+            <h3>г.Минск</h3>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+
+            <details>
+
+                <summary></summary>
+
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            </details>
+        </div>
+        <!--  -->
+        <div class="footer-third-block">
+            <h3>г.Гомель</h3>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+
+            <details>
+
+                <summary></summary>
+
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            </details>
+        </div>
+        <!--  -->
+        <div class="footer-four-block">
+            <h3 class="footer-link_menu">Каталог</h3>
+
+
+            <a href="#">Для собак</a>
+            <a href="#">Для кошек</a>
+            <a href="#">Акции</a>
+            <a href="/brands.html">Бренды</a>
+            <a href="#">ВетАптека</a>
+
+        </div>
+        <!--  -->
+
+        <div class="footer-five-block">
+            <h3 class="footer-link_menu">Покупателям</h3>
+
+            <a href="/about.html">О нас</a>
+            <a href="/delivery.html">Доставка</a>
+            <a href="/oplata.html">Оплата</a>
+            <a href="/reviews.html">Отзывы</a>
+            <a href="/shops.html">Магазины</a>
+
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-pay-text">
+            <p>ООО «Профсотрудничество» УНП 192185928 Минская область, Минский район, Хатежинский сельский совет,
+                агрогородок Хатежино, ул. Центральная 18Б/1. Регистрационный номер в торговом реестре 5554557. Дата
+                внесения в торговый реестр 07.04.2023 г.</p>
+        </div>
+
+        <div class="footer-bottom-pay-icon">
+            <picture><source srcset="img/logo/master-secure.webp" type="image/webp"><img src="img/logo/master-secure.png" alt=""></picture>
+            <picture><source srcset="img/logo/mastercard.webp" type="image/webp"><img src="img/logo/mastercard.png" alt=""></picture>
+            <picture><source srcset="img/logo/visa.webp" type="image/webp"><img src="img/logo/visa.png" alt=""></picture>
+            <picture><source srcset="img/logo/visa2.webp" type="image/webp"><img src="img/logo/visa2.png" alt=""></picture>
+            <picture><source srcset="img/logo/belcard.webp" type="image/webp"><img src="img/logo/belcard.png" alt=""></picture>
+            <picture><source srcset="img/logo/assist.webp" type="image/webp"><img src="img/logo/assist.png" alt=""></picture>
+            <picture><source srcset="img/logo/oplati.webp" type="image/webp"><img src="img/logo/oplati.png" alt=""></picture>
+
+
+
+        </div>
+
+        <script src="js/app.min.js?_v=20240822151930"></script>
+</footer>
+
+
+</body>
+
+</html>

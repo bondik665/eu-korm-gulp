@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"404"
+})
+
+<body>
+    @@include('html/header.html',{})
+    <main>
+
+
+        <div class="wrapper-404">
+            <img src="@img/404/404.png" alt="404">
+            <div class="wrapper-404__text">
+                <h1>Страница не найдена</h1>
+                <p>Воспользуйтесь поиском, чтобы найти все что нужно. Если в корзине были товары – войдите в Ваш
+                    профиль, чтобы посмотреть список.</p>
+                
+            </div>
+            <div class="wrapper-404__btn">
+                <form action="/" target="_blank">
+                    <button>Вернуться на главную</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+    @@include('html/footer.html',{})
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"checkout"
+})
+
+<body>
+    @@include('html/header.html',{})
+    <main>
+
+        <h1>Оформление заказа</h1>
+        <div class="checkout-main-wrapper">
+            <!-- form  -->
+            <div class="order-form">
+                <form class="checkout-form">
+                    <div class="form-group">
+                        <label for="city">Город*</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Адрес*</label>
+                        <input type="text" id="address" name="address" required placeholder="Укажите ваш адрес">
+                    </div>
+                    <div class="form-secod-block">
+                        <div class="form-group">
+                            <label for="house">Дом*</label>
+                            <input type="text" id="house" name="house" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="building">Корпус:</label>
+                            <input type="text" id="building" name="building">
+                        </div>
+                        <div class="form-group">
+                            <label for="apartment">Квартира:</label>
+                            <input type="text" id="apartment" name="apartment">
+                        </div>
+                    </div>
+
+                    <h3>Способ доставки</h3>
+                    <div class="delivery-options">
+                        <div class="delivery-option">
+                            <input type="radio" id="delivery1" name="delivery" value="delivery1" checked
+                                class="custom-radio">
+                            <label for="delivery1"><img src="@img/checkout/truck.png" alt="">Курьер по городу</label>
+                            <p>Стоимость: 6 руб.Беплатно в пределах МКАД от 50 руб.</p>
+                        </div>
+                        <div class="delivery-option">
+                            <input type="radio" id="delivery2" name="delivery" value="delivery2" class="custom-radio">
+                            <label for="delivery2"><img src="@img/checkout/hz.png" alt="">Доставка по РБ</label>
+                            <p>Стоимость: 6 руб.согласовывается с менеджером</p>
+                        </div>
+                        <div class="delivery-option">
+                            <input type="radio" id="delivery3" name="delivery" value="delivery3" class="custom-radio">
+                            <label for="delivery3"><img src="@img/checkout/hz2.png" alt="">Самовывоз</label>
+                            <p>Бесплатно из ближайших магазинов Минска, Гомеля</p>
+                        </div>
+                    </div>
+                    <h3>Оплата</h3>
+                    <div class="payment">
+                        <div class="payment-option">
+                            <input type="radio" id="payment1" name="payment" value="payment1" class="custom-radio">
+                            <label for="payment1">Наличными</label>
+                            <p>в белорусских рублях при доставке курьером или самовывозе</p>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="payment2" name="payment" value="payment2" class="custom-radio">
+                            <label for="payment2">Банковской картой</label>
+                            <p>через терминал курьеру или продавцу магазина </p>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="payment3" name="payment" value="payment3" class="custom-radio">
+                            <label for="payment3">Картой онлайн</label>
+                            <p>через систему bePAid по номеру карты</p>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="payment4" name="payment" value="payment4" class="custom-radio">
+                            <label for="payment4">Через систему "Расчет" (ЕРИП)</label>
+                            <p>через интернет-банк, систему электронных денег, банкомат, инфокиоск или терминал приёма
+                                наличных</p>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="payment5" name="payment" value="payment5" class="custom-radio">
+                            <label for="payment5">Через приложение “Оплати”</label>
+                            <p>онлайн по ссылке</p>
+                        </div>
+
+
+                    </div>
+                    <!--  -->
+                    <h3>Данные покупателя</h3>
+
+                    <div class="form-container-2">
+                        <div class="form-group">
+                            <label for="name">Имя*</label>
+                            <input type="text" id="name" name="name" class="form-control mystic-name" required>
+                        </div>
+                       <div class="qwerty-test">
+                        <div class="form-group">
+                            <label for="phone">Телефон*</label>
+                            <input type="tel" id="phone" name="phone" class="form-control celestial-phone" required placeholder="+375 ХХ ХХХ-ХХ-ХХ">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control cosmic-email">
+                        </div>
+                       </div>
+                        <div class="form-group">
+                            <label for="comment">Комментарий</label>
+                            <textarea id="comment" name="comment" class="form-control galactic-comment" placeholder="Уточнение о “дате” и “времени” доставки и др."></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="check">
+                        <input type="checkbox" id="chec1" name="check" value="check1" class="custom-radio">
+                        <label for="check1">Я ознакомился и принимаю <a href="#">условия пользовательского соглашения</a></label>
+                        
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="chec2" name="check" value="check2" class="custom-radio">
+                        <label for="check2">Я хочу получать новости об акциях по почте</label>
+                        
+                    </div>
+                    <br>
+
+
+                    <!--  -->
+            </div>
+
+
+            <!-- cartres -->
+            <div class="cartres-block">
+                <div class="cart-tovar-result">
+                    <div class="cart-element">
+                        <div class="cart-element-block">
+
+                            <div class="itogo-box">
+                                <h4>Итого</h4>
+                                <div><span>3 товара</span> <span class="weight">| 12кг</span></div>
+                            </div>
+
+                            <div class="final">
+                                <div class="final-price-sum">Сумма <span>156 руб</span></div>
+                                <div class="final-old-price">Скидка <span>-20 руб</span></div>
+                                <div class="final-price">К оплате <span>156.79 руб</span></div>
+
+                            </div>
+                            <br>
+                           
+                            <button type="submit" class="submit-button">Оформить заказ</button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                </form>
+                <br>
+                <div class="registration-wrapper">
+                    <div class="register-link">
+                        <a href="#">
+                            <img src="@img/checkout/man.png" alt="Вход/Регистрация">
+                            <span>Вход/Регистрация</span>
+                        </a>
+                        <p>Регистрация позволит вам накапливать бонусы, получить накопительную скидку и отслеживать
+                            статус заказа</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+    @@include('html/footer.html',{})
+
+
+</body>
+
+</html>

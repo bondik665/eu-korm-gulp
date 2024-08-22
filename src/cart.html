@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"cart"
+})
+
+<body>
+    @@include('html/header.html',{})
+    <main>
+
+        <div class="cart-header">
+            <h2>В корзине 2 товара</h2>
+        </div>
+        <div class="cart-wrapper-info">
+
+
+            <div class="cart-item-header">
+                <span class="name-tovar">Наименование</span>
+                <span>Цена</span>
+                <span>Количество</span>
+                <span class="name-price">Сумма</span>
+            </div>
+            <br>
+            
+            <div class="cart-main-box">
+                <div class="cart-tovar-box">
+                    <div class="cart-item-wrapper">
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="@img/tovar/tovar.png" alt="Товар 1">
+                            </div>
+                            <div class="item-name">
+                                <p>Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+                                <span>Артикул: 70376_14447</span>
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount">15,55 руб</span>
+                                    <span class="price-without-discount">26,55 руб</span>
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti">-</button>
+                                    <input type="text" id="quantity" value="1" readonly>
+                                    <button class="btn-cart-quantiti">+</button>
+                                </div>
+                                <div class="item-total">15,55 руб</div>
+                                <div class="item-remove">
+                                    <span>&times;</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <!--  -->
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="@img/tovar/tovar.png" alt="Товар 1">
+                            </div>
+                            <div class="item-name">
+                                <div class="present-cart"><img src="@img/cart-folder/present-cart.png" alt="">Подарок
+                                </div>
+                                <p>Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount">0 руб</span>
+
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti">-</button>
+                                    <input type="text" id="quantity" value="1" readonly>
+                                    <button class="btn-cart-quantiti">+</button>
+                                </div>
+                                <div class="item-total">0 руб</div>
+                                <div class="item-remove-empty">
+                                    <span>&nbsp</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <!--  -->
+
+                    </div>
+
+                    
+
+                    <br>
+
+                    <div class="cart-item-wrapper">
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="@img/tovar/tovar.png" alt="Товар 1">
+                            </div>
+                            <div class="item-name">
+                                <p>Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+                                <span>Артикул: 70376_14447</span>
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount">15,55 руб</span>
+                                    <span class="price-without-discount">20,55 руб</span>
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti">-</button>
+                                    <input type="text" id="quantity" value="1" readonly>
+                                    <button class="btn-cart-quantiti">+</button>
+                                </div>
+                                <div class="item-total">15,55 руб</div>
+                                <div class="item-remove">
+                                    <span>&times;</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <!-- товар нет в наличии  -->
+                    <div class="cart-item-wrapper">
+                        <div class="cart-item">
+                            <div class="item-image" style="filter: grayscale(100%);">
+                                <img src="@img/tovar/tovar.png" alt="Товар 1">
+                            </div>
+                            <div class="item-name" >
+                                <p style="color: #80808A;">Bosch My Friend + Adult with Lamb (Бош Май Фрэнд Плюс Эдалт с Ягненком) 12кг</p>
+                                <span style="color: #80808A;">Артикул: 70376_14447</span>
+                            </div>
+                            <div class="item-second-cart-block">
+                                <div class="item-price">
+                                    <span class="price-with-discount" style="color: #80808A;">15,55 руб</span>
+                                    <span class="price-without-discount" style="color: #80808A;">20,55 руб</span>
+                                </div>
+                                <div class="quantity-input-cart">
+                                    <button class="btn-cart-quantiti" style="color: #80808A;">-</button>
+                                    <input type="text" id="quantity" value="1" readonly style="color: #80808A;">
+                                    <button class="btn-cart-quantiti" style="color: #80808A;">+</button>
+                                </div>
+                                <div class="item-total" style="color: #80808A;">15,55 руб</div>
+                                <div class="item-remove">
+                                    <span>&times;</span>
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+
+
+
+                    <!-- промокод -->
+                    <div class="promo-container">
+                        <input type="text" class="promo-input" placeholder="Ввести промокод">
+                        <button class="apply-button">Применить</button>
+                    </div>
+
+                    <!-- промо end -->
+               
+                </div>
+                
+                <div>
+                    <div class="cart-tovar-result">
+                        <div class="cart-element">
+                            <div class="cart-element-block">
+
+                                <div class="itogo-box">
+                                    <h4>Итого</h4>
+                                    <div><span>3 товара</span> <span class="weight">| 12кг</span></div>
+                                </div>
+
+                                <div class="final">
+                                    <div class="final-price-sum">Сумма <span>156 руб</span></div>
+                                    <div class="final-old-price">Скидка <span>-20 руб</span></div>
+                                    <div class="final-price">К оплате <span>156.79 руб</span></div>
+
+                                </div>
+
+                                <a href="/checkout.html" ><button class="add-to-cart-btn">Перейти к оформлению</button></a>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <div class="yellow-attention">
+                        <div>⚠️ 🚚 Вам не хватает <span>18.19 руб.</span> до бесплатной доставки!</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <br>
+
+        </div>
+
+    </main>
+    @@include('html/footer.html',{})
+
+
+</body>
+
+</html>

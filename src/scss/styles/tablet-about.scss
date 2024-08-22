@@ -1,0 +1,39 @@
+@media  (max-width: 1024px) {
+
+    .about-banner, .about-description-text, .about-title-wrapper, .lazy {
+        width: 100%;
+    }
+    .about-banner img{
+        width: 100%;
+        
+    }
+    .slider, .lazy, .slick-initialized, .slick-slider img{
+        width: 100%;
+    }
+
+
+
+
+}
+@media  (max-width: 820px) {
+
+    .about-banner, .about-description-text, .about-title-wrapper, .lazy {
+        width: 100%;
+    }
+    .about-banner img{
+        width: 100%;
+        
+    }
+    .slider, .lazy, .slick-initialized, .slick-slider img{
+        width: 100%;
+    }
+    .about-image-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+
+}

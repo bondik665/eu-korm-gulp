@@ -1,0 +1,93 @@
+//подключение шрифтов 
+@import "./styles/fonts";
+@import "./libs/slick.scss";
+
+@import "./styles/header.scss";
+@import "./styles/style-slider-mob.scss";
+@import "./styles/footer.scss";
+@import "./styles/index.scss";
+@import "./styles/catalog.scss";
+@import "./styles/sidebar.scss";
+@import "./styles/catalog-categories.scss";
+@import "./styles/catalog-product.scss";
+@import "./styles/about.scss";
+@import "./styles/brands.scss";
+@import "./styles/delivery.scss";
+@import "./styles/oplata.scss";
+@import "./styles/404.scss";
+@import "./styles/reviews.scss";
+@import "./styles/shops.scss";
+@import "./styles/empty-cart.scss";
+@import "./styles/cart.scss";
+
+@import "./styles/checkout.scss";
+@import "./styles/main-catalog.scss";
+
+@import "./styles/search-result.scss";
+@import "./styles/thanks.scss";
+@import "./styles/cabinet.scss";
+@import "./styles/profile_bonus.scss";
+
+@import "./styles/history-profile.scss";
+
+@import "./styles/reset-password.scss";
+@import "./styles/mobile-mega-menu.scss";
+@import "./styles/mobile.scss";
+@import "./styles/mobile-about.scss";
+
+@import "./styles/delivery-mobile.scss";
+@import "./styles/mobile-oplata.scss";
+@import "./styles/mobile-rewievs.scss";
+@import "./styles/404-mobile.scss";
+@import "./styles/cabinet-mobile.scss";
+@import "./styles/thanks-mobile.scss";
+@import "./styles/reset-password-mobile.scss";
+
+@import "./styles/search-result-mobile.scss";
+@import "./styles/main-catalog-mobile.scss";
+@import "./styles/history-profile-mobile.scss";
+@import "./styles/cart-mobile.scss";
+@import "./styles/catalog-product-mobile.scss";
+@import "./styles/catalog-mobile.scss";
+@import "./styles/checkout-mobile.scss";
+
+
+
+
+@import "./styles/tablet-index.scss";
+@import "./styles/tablet-about.scss";
+@import "./styles/tablet-reviews.scss";
+@import "./styles/tablet-shops.scss";
+@import "./styles/tablet-catalog.scss";
+@import "./styles/tablet-product.scss";
+@import "./styles/tablet-cart.scss";
+@import "./styles/tablet-cabinet.scss";
+@import "./styles/tablet-profile_bonus.scss";
+@import "./styles/tablet-history-profile.scss";
+@import "./styles/tablet-brands.scss";
+@import "./styles/tablet-main-catalog.scss";
+
+
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+
+}
+
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    max-width: 1312px;
+    padding: 0 48px;
+    margin: 0 auto;
+    font-family: 'GolosText', 'inter';
+
+}

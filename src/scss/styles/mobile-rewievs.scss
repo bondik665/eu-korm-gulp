@@ -1,0 +1,68 @@
+@media (max-width: 767px) {
+    .reviews-wrapper-main {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .reviews-title-wrapper {
+        width: 100%;
+    }
+
+
+    .sidebar-img__top img {
+        display: none;
+    }
+
+    .reviews-title-wrapper {
+        width: 100%;
+    }
+    .reviews-title-wrapper h1 {
+        width: 100%;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #16151C;
+    }
+    .reviews-container {
+        width: 100%;
+       
+    }
+    .reviews-sidebar__container {
+        width: 100%;
+    }
+
+
+    .reviews-sidebar__createR {
+        width: 100%;
+
+    }
+
+    .reviews-container__block-title {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .reviews-container__text p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight:400;
+        color: #16151C;
+    }
+
+
+    // 
+    .nameProduct-review-block{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+    }
+    .title-ackcii-a {
+        margin-left: 0px;
+       
+    }
+
+}

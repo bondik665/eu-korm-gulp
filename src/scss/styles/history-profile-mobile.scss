@@ -1,0 +1,105 @@
+@media(max-width:767px){
+    .order-history {
+        width: 100%;
+     
+    }
+    .order-history-header {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #344054;
+    }
+    .order-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .order-number, .order-date {
+        display: inline-block;
+        font-weight: bold;
+    }
+    
+    .order-number {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .order-date {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    .order-total {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+    
+    .order-status-succes {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+    
+   
+    .repeat-button, .expand-button {
+        display: inline-block;
+        margin-right: 10px; 
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        margin-left: -16px;
+    }
+  
+    
+ 
+
+
+    // выпад карточка 
+    .order-detail-item {
+        width: 100%;
+    }
+    .order-detail-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .product-image {
+        grid-row: span 4;
+        width: 100px; /* Установите желаемую ширину */
+        height: auto;
+    }
+    
+    .product-name {
+        grid-column: 2;
+        font-weight: bold;
+    }
+    
+    .product-sku {
+        grid-column: 2;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .product-quantity {
+        grid-column: 2;
+    }
+    
+    .product-price {
+        grid-column: 2;
+        font-weight: bold;
+    }
+
+}

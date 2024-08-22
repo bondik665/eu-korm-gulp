@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"search-result"
+})
+
+<body>
+    @@include('html/header.html',{})
+    <main>
+
+
+        <div class="search-result-wrapper">
+            <h1>Результаты поиска</h1>
+
+        </div>
+        <!--  -->
+        <div class="sort-link-wrapper-search">
+            <div class="sort-link-wrapper"> 
+                <img src="@img/tovar/Arrow.png" alt="">
+                <form class="sort-link-wrapper-form" method="get">
+
+                    <select name="orderby" class="orderby" aria-label="Заказ в магазине">
+
+                        <option value="popularity" selected="selected">По популярности</option>
+                        <option value="date">По новизне</option>
+                        <option value="price">По возрастанию</option>
+                        <option value="price-desc">По убыванию</option>
+                    </select>
+                    <input type="hidden" name="paged" value="1">
+                </form>
+            </div>
+        </div>
+
+
+        <!-- preview катлог категории --> 
+
+        <div class="catalog-categories__wrap">
+
+
+            <div class="catalog-categories-search">
+
+
+                <!-- товар 1 -->
+                <div class="catalog-categories_col">
+                    <div class="catalog-categories-item bondbox">
+                        <div class="catalog-categories-item-img">
+
+                            <a href="/catalog-product.html"><img src="@img/tovar/tovar.png" alt="tovar"></a>
+                        </div>
+                        <div class="catalog-categories-item-info">
+                            <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+                        </div>
+                        <div class="card-amount-wrapper">
+                            <div>
+                                <span class="card-amount-disc">-20%</span>
+                                <div class="card-amount">
+
+
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <div class="card-discount-price">
+                                            <span>55.4 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+
+                        </div>
+                        <details class="more">
+
+                            <summary></summary>
+                            <div class="card-amount-wrapper">
+                                <div>
+                                    <span class="card-amount-disc">-20%</span>
+                                    <div class="card-amount">
+
+
+                                        <div class="card-ves">1кг</div>
+                                        <div>
+                                            <div class="card-price">
+                                                <span>42.4 руб.</span>
+                                            </div>
+                                            <div class="card-discount-price">
+                                                <span>55.4 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <!-- <div class="card-discount-price">
+                                    <span>42.4 руб.</span>
+                                </div> -->
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <!-- <div class="card-discount-price">
+                                    <span>42.4 руб.</span>
+                                </div> -->
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+
+                            </div>
+
+
+
+                        </details>
+                    </div>
+
+                </div>
+                <!-- товар1 end -->
+                <!-- товар 2 -->
+                <div class="catalog-categories_col">
+                    <div class="catalog-categories-item bondbox">
+                        <div class="catalog-categories-item-img">
+                            <img src="@img/tovar/tovar.png" alt="tovar">
+                        </div>
+                        <div class="catalog-categories-item-info">
+                            <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+                        </div>
+                        <div class="card-amount-wrapper">
+                            <div>
+                                <span class="card-amount-disc">-20%</span>
+                                <div class="card-amount">
+
+
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <div class="card-discount-price">
+                                            <span>55.4 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+
+                        </div>
+                        <details class="more">
+
+                            <summary></summary>
+                            <div class="card-amount-wrapper">
+                                <div>
+                                    <span class="card-amount-disc">-20%</span>
+                                    <div class="card-amount">
+
+
+                                        <div class="card-ves">1кг</div>
+                                        <div>
+                                            <div class="card-price">
+                                                <span>42.4 руб.</span>
+                                            </div>
+                                            <div class="card-discount-price">
+                                                <span>55.4 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <!-- <div class="card-discount-price">
+                                    <span>42.4 руб.</span>
+                                </div> -->
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <div class="card-discount-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+
+                            </div>
+
+
+
+                        </details>
+                    </div>
+
+                </div>
+                <!-- товар2 end -->
+
+                <!-- товар 3 -->
+                <div class="catalog-categories_col">
+                    <div class="catalog-categories-item bondbox">
+                        <div class="catalog-categories-item-img">
+                            <img src="@img/tovar/tovar.png" alt="tovar">
+                        </div>
+                        <div class="catalog-categories-item-info">
+                            <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+                        </div>
+                        <div class="card-amount-wrapper">
+                            <div>
+                                <span class="card-amount-disc">-20%</span>
+                                <div class="card-amount">
+
+
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <div class="card-discount-price">
+                                            <span>55.4 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+
+                        </div>
+                        <details class="more">
+
+                            <summary></summary>
+                            <div class="card-amount-wrapper">
+                                <div>
+                                    <span class="card-amount-disc">-20%</span>
+                                    <div class="card-amount">
+
+
+                                        <div class="card-ves">1кг</div>
+                                        <div>
+                                            <div class="card-price">
+                                                <span>42.4 руб.</span>
+                                            </div>
+                                            <div class="card-discount-price">
+                                                <span>55.4 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <!-- <div class="card-discount-price">
+                                    <span>42.4 руб.</span>
+                                </div> -->
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <!-- <div class="card-discount-price">
+                                    <span>42.4 руб.</span>
+                                </div> -->
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+
+                            </div>
+
+
+
+                        </details>
+                    </div>
+
+                </div>
+                <!-- товар3 end -->
+                <!-- товар 4 -->
+                <div class="catalog-categories_col">
+                    <div class="catalog-categories-item bondbox">
+                        <div class="catalog-categories-item-img">
+                            <img src="@img/tovar/tovar.png" alt="tovar">
+                        </div>
+                        <div class="catalog-categories-item-info">
+                            <h4>Sanabelle Adult (Санабелль Эдалт с птицей) Корм для котов 0.4кг</h4>
+                        </div>
+                        <div class="card-amount-wrapper">
+                            <div>
+                                <span class="card-amount-disc">-20%</span>
+                                <div class="card-amount">
+
+
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <div class="card-discount-price">
+                                            <span>55.4 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+                            <div class="card-amount">
+                                <div class="card-ves">1кг</div>
+                                <div>
+                                    <div class="card-price">
+                                        <span>42.4 руб.</span>
+                                    </div>
+                                    <!-- <div class="card-discount-price">
+                                <span>42.4 руб.</span>
+                            </div> -->
+                                </div>
+                                <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                            </div>
+
+                        </div>
+                        <details class="more">
+
+                            <summary></summary>
+                            <div class="card-amount-wrapper">
+                                <div>
+                                    <span class="card-amount-disc">-20%</span>
+                                    <div class="card-amount">
+
+
+                                        <div class="card-ves">1кг</div>
+                                        <div>
+                                            <div class="card-price">
+                                                <span>42.4 руб.</span>
+                                            </div>
+                                            <div class="card-discount-price">
+                                                <span>55.4 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <!-- <div class="card-discount-price">
+                                    <span>42.4 руб.</span>
+                                </div> -->
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+                                <div class="card-amount">
+                                    <div class="card-ves">1кг</div>
+                                    <div>
+                                        <div class="card-price">
+                                            <span>42.4 руб.</span>
+                                        </div>
+                                        <!-- <div class="card-discount-price">
+                                    <span>42.4 руб.</span>
+                                </div> -->
+                                    </div>
+                                    <div><img src="@img/tovar/card-cart.png" alt=""></div>
+                                </div>
+
+                            </div>
+
+
+
+                        </details>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <!--  -->
+
+
+
+    </main>
+    @@include('html/footer.html',{})
+
+
+</body>
+
+</html>

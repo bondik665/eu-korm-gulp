@@ -1,0 +1,29 @@
+@media(max-width:767px){
+    .main-catalog-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .desc-main-catalog-wrapper {
+        width: 100%;
+    }
+    .main-catalog-categories-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .catalog-categories-box {
+        width: 100%;
+        height: 180px;
+        border: 1px solid #e5e5eb;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .menu-container {
+        width: 100%;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+}

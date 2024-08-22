@@ -1,0 +1,238 @@
+
+.title-ackcii-brend, .title-ackcii-a-l{
+    text-decoration: none;
+    color: #16151C;
+}
+//для банера =================================================
+.main-baner-img{
+    border-radius: 16px;
+    position: relative;
+}
+
+
+.multiple-items {
+    padding: 0;
+    margin: 10px;
+    width: 1312px;
+    margin: 0 auto
+
+}
+
+
+.carousel {
+    padding: 0 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1312px;
+    margin-bottom: 20px;
+}
+.carousel__img{
+
+	width: 100%;
+	height: 420px;
+    border-radius: 16px;
+}
+
+
+.carousel__item {
+    position: relative; /* Устанавливаем контекст позиционирования для дочерних элементов */
+}
+
+.carousel__img {
+    display: block; /* Убеждаемся, что изображение ведет себя как блочный элемент */
+    width: 100%; /* Занимает всю доступную ширину */
+    height: auto; /* Автоматически подстраивает высоту под пропорции изображения */
+}
+
+.carusel_text {
+    width: 480px;
+    position: absolute; /* Позиционируем текст абсолютно относительно .carousel__item */
+    left: 4%; /* Располагаем текст по горизонтали */
+    top: 30%; /* Располагаем текст по вертикали */
+    color: white; /* Цвет текста, может быть изменен по вашему усмотрению */
+   
+    padding: 10px; /* Отступы вокруг текста */
+}
+
+
+.carusel_text div{
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 800;
+    color: #000;
+}
+.carusel_text span{
+   
+    background-image: url('./../img/logo/yellow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-13deg);
+    padding: 20px;
+}
+.carusel_text button{
+    width: 210px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #00A743;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    position: absolute;
+    bottom: -100%;
+    border: none;
+    cursor: pointer;
+}
+
+.title-ackcii{
+    width: 1312px;
+}
+
+.slider-title-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carousel2__img{
+    width: 417px;
+    height: 164px;
+    border-radius: 20px;
+    
+}
+
+.carousel3__img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding-left: 10px;
+    object-fit: cover;
+}
+
+
+// 
+.content {
+    margin: 0 auto;
+    padding: 30px;
+    
+    // max-width: 600px;
+    box-sizing: border-box;
+  }
+// 
+
+.carousel4__img{
+    width: 120px;
+    height: 70px;
+    
+    padding-left: 10px;
+    object-fit: fill;
+}
+
+.block-banner-main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+    width: 1312px;
+}
+.baner-link{
+    background-image: url('./../img/logo/banerDog.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 644px;
+    height: 320px;
+    border-radius: 20px;
+}
+.carusel_text2{
+    
+    width: 460px;
+    position: relative;
+    left: 6%;
+    top: 5%;
+}
+.carusel_text2 h4{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #16151C
+}
+.baner-link button{
+    width: 180px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    color: #16151C;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    position: relative;
+    margin-top: 40px;
+    left: 6%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.baner-link2{
+    background-image: url('./../img/logo/banerCat.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 644px;
+    height: 320px;
+    border-radius: 20px;
+}
+.baner-link2 button{
+    width: 180px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    color: #16151C;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    position: relative;
+    margin-top: 40px;
+    left: 6%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.title-ackcii-a{
+    margin-left: 50px;
+    text-decoration: none;
+    padding-right: 6px;
+    color: #16151C;
+}
+
+.main-page-info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 184px;
+    width: 1312px;
+}
+.info-block{
+    width: 313px;
+    height: 152px;
+    padding: 0px 16px 0px 16px;
+}
+.info-block h4{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #16151C;
+    width:281px;
+
+}
+.info-block p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #80808A;
+    font-weight: 400;
+}
+ 
+
+
+
+//для банера end ===========================
+

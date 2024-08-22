@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
+    
+
+    <link rel="stylesheet" href="css/style.min.css?_v=20240822151930">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css?_v=20240822151930">
+    
+    
+    <title>Главная</title>
+</head>
+
+
+<body>
+    <header>
+  <!-- header desc -->
+  <div class="main-header">
+
+    <div class="header-logo-block animated pulse">
+      <div class="menu-header-main-logo">
+        <a href="/"><picture><source srcset="img/logo/logo-e.webp" type="image/webp"><img src="img/logo/logo-e.png" alt=""></picture></a>
+      </div>
+      <div class="menu-header-main-phone">
+        <picture><source srcset="img/logo/iconPhone.webp" type="image/webp"><img src="img/logo/iconPhone.png" alt=""></picture>
+        <a href="tel:+37544757000">+375(44)757 00 00</a>
+        <div>Пн-пт 10:00 - 18:00</div>
+      </div>
+    </div>
+
+    <div class="list-menu-head-block animated pulse">
+      <div class="list-menu-head">
+        <a href="/about.html">О нас</a>
+        <a href="/delivery.html">Доставка</a>
+        <a href="/oplata.html">Оплата</a>
+        <a href="/reviews.html">Отзывы</a>
+        <a href="/shops.html">Магазины</a>
+      </div>
+      <div class="mobile-block" style="display: flex;flex-wrap: wrap;gap: 10px;">
+        <a href="#" class="register-menu-btn"><picture><source srcset="img/logo/iconRegis.webp" type="image/webp"><img src="img/logo/iconRegis.png" alt=""></picture></a>
+
+        <a href="/cart.html"><picture><source srcset="img/logo/iconCart.webp" type="image/webp"><img src="img/logo/iconCart.png" alt=""></picture></a>
+
+        <a class="unique-menu-trigger" id="uniqueOpenMobileMenu"><picture><source srcset="img/logo/menumob.webp" type="image/webp"><img src="img/logo/menumob.png" alt=""></picture></a>
+      </div>
+
+
+
+
+
+    </div>
+    <div id="uniqueMobileMenuContainer" class="unique-mobile-menu-container">
+      <div class="unique-mobile-menu-header">
+        <div class="unique-mobile-menu-buttons">
+          меню
+          <!-- <a href="#" class="unique-mobile-login-btn" id="uniqueLoginButton">Вход</a> -->
+          <!-- <a href="/cabinet.html" class="unique-mobile-register-btn" id="uniqueRegisterButton">Регистрация</a> -->
+        </div>
+        <button id="uniqueCloseMobileMenu" class="unique-mobile-close-btn">×</button>
+      </div>
+      <div class="unique-mobile-menu-content">
+        <div class="unique-mobile-menu-info">
+          <p>+375(44)757 00 00</p>
+          <p>График работы: Пн-пт 10:00 - 18:00</p>
+        </div>
+        <ul class="unique-mobile-nav-list">
+          <li><a href="/about.html">О компании</a></li>
+          <li><a href="/delivery.html">Доставка</a></li>
+          <li><a href="/oplata.html">Оплата</a></li>
+          <li><a href="/reviews.html">Отзывы</a></li>
+          <li><a href="/shops.html">Магазины</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  -->
+
+<!-- popup registaration -->
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="registration-popup" id="registrationPopup">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h2 class="popup-title">Регистрация</h2>
+      <label for="emailInput" class="form-label">Электронная почта*</label>
+      <input type="email" id="emailInput" class="form-input" placeholder="Ваш E-mail" required>
+      <label for="phoneInput" class="form-label">Номер телефона*</label>
+      <input type="text" id="phoneInput" class="form-input" placeholder="+375 (XX) XXX-XX-XX" required>
+      <div class="password-toggle">
+        <label for="passwordInput" class="form-label">Пароль*</label>
+        <input type="password" id="passwordInput" class="form-input" required>
+        <i class="eye-icon fas fa-eye-slash" onclick="togglePassword('passwordInput')"></i>
+      </div>
+      <div class="text-reg">Пароль должен состоять не менее чем из 8 символов</div>
+      <div class="password-toggle">
+        <label for="confirmPasswordInput" class="form-label">Подтверждение пароля*</label>
+        <input type="password" id="confirmPasswordInput" class="form-input" required>
+        <i class="eye-icon fas fa-eye-slash" onclick="togglePassword('confirmPasswordInput')"></i>
+      </div>
+      <div class="checkbox-group">
+        <label class="checkbox-label"><input type="checkbox" id="dataProcessingCheckbox" required> Согласие на обработку
+          персональных данных</label>
+        <label class="checkbox-label"><input type="checkbox" id="newsletterCheckbox"> Согласие на получение
+          рассылки</label>
+      </div>
+      <button type="button" class="register-button" onclick="register()">Зарегистрироваться</button>
+      <div class="bottom-text">
+        <span>Уже зарегистрированы?</span>
+        <a href="#" class="login-link">Войти</a>
+      </div>
+    </div>
+    <!--  -->
+  </div>
+  <!--  mega-menu-->
+
+  <div class="navbar ">
+
+    <div class="navbar-block">
+      <div class="iconBlock">
+        <a href="#home"><picture><source srcset="img/logo/iconSale.webp" type="image/webp"><img src="img/logo/iconSale.png" alt=""></picture>Акции</a><span class="custom-span"></span>
+      </div>
+
+      <div class="dropdown-block">
+        <div class="iconBlock">
+
+          <a href="#home">Кошки</a><span class="custom-span"></span>
+        </div>
+        <div class="dropdown-content-block">
+
+          <div class="row-block">
+            <div class="column-block">
+              <!-- <h3>Корма</h3> -->
+              <a href="/catalog.html">Жать сюда</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="dropdown-block">
+        <div class="iconBlock">
+
+          <a href="#home">Собаки</a><span class="custom-span"></span>
+        </div>
+        <div class="dropdown-content-block">
+
+          <div class="row-block">
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="dropdown-block">
+        <div class="iconBlock">
+
+          <a href="#home">Бренды</a><span class="custom-span"></span>
+        </div>
+        <div class="dropdown-content-block">
+
+          <div class="row-block">
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column-block">
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="iconBlock">
+        <a href="#">ветАптека</a><span class="custom-span"></span>
+      </div>
+      <div class="iconBlock">
+        <a href="#news">Уценка</a>
+      </div>
+
+    </div>
+    <!-- конец mega -menu -->
+
+
+
+
+
+    <!--поиск-->
+    <div class="search_block">
+      <form>
+
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Поиск по сайту">
+          <button class="search-button">
+            <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Поиск"></picture>
+          </button>
+          <div class="search-suggestions" style="display: none;">
+            <ul>
+              <li>Вариант 1</li>
+              <li>Вариант 2</li>
+              <li>Вариант 3</li>
+            </ul>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- mega-menu-mobile -->
+  <div class="mobile-wrap">
+    <div class="mobile-navbar">
+      <div class="mobile-hamburger" onclick="toggleMobileMenu()">
+        <button class="catalog-button-purple"><span class="hamburger-icon"></span>Каталог</button>
+
+      </div>
+      <div class="mobile-search-block">
+        <div class="mobile-search-container">
+          <input type="text" class="mobile-search-input" placeholder="Поиск по сайту">
+          <button class="mobile-search-button">
+            <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Поиск"></picture>
+          </button>
+          <div class="mobile-search-suggestions" style="display: none;">
+            <ul>
+              <li>Вариант 1</li>
+              <li>Вариант 2</li>
+              <li>Вариант 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-close-button" onclick="toggleMobileMenu()">&times;</div>
+      <div class="mobile-menu-content">
+        <a href="#home">Акции</a>
+        <div class="mobile-dropdown" onclick="toggleDropdown(this)">
+          <a href="#home">Кошки</a>
+          <div class="mobile-dropdown-content">
+            <div class="mobile-row">
+              <div class="mobile-column">
+                <a href="/catalog.html">Жать сюда</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-dropdown" onclick="toggleDropdown(this)">
+          <a href="#home">Собаки</a>
+          <div class="mobile-dropdown-content">
+            <div class="mobile-row">
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-dropdown" onclick="toggleDropdown(this)">
+          <a href="#home">Бренды</a>
+          <div class="mobile-dropdown-content">
+            <div class="mobile-row">
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="mobile-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#">ветАптека</a>
+        <a href="#news">Уценка</a>
+      </div>
+    </div>
+
+    <!-- поиск мобила -->
+    <div class="mobile-search_block-987654">
+      <button class="mobile-search-button-123456" onclick="toggleSearchPopup()">
+        <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Поиск"></picture>
+      </button>
+    </div>
+
+    <div class="overlay-345678" id="overlay" onclick="closeSearchPopup()"></div>
+
+    <div class="mobile-search-popup-789012" id="searchPopup">
+      <input type="text" placeholder="Поиск по сайту" id="searchInput">
+      <button type="button" onclick="performSearch()">
+        <picture><source srcset="https://img.icons8.com/000000/search" type="image/webp"><img src="https://img.icons8.com/000000/search" alt="Найти"></picture>
+      </button>
+    </div>
+    <!-- поиск end -->
+
+  </div>
+  <!-- end mobilemegamenu -->
+
+
+</header>
+
+
+
+<!-- для поиска -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchButton = document.querySelector('.search-button');
+    const searchSuggestions = document.querySelector('.search-suggestions');
+
+    searchButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      if (searchSuggestions.style.display === 'none') {
+        searchSuggestions.style.display = 'block';
+      } else {
+        searchSuggestions.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.search-container')) {
+        searchSuggestions.style.display = 'none';
+      }
+    });
+  });
+</script>
+<!-- form-register -->
+<script>
+  function openPopup() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('registrationPopup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('registrationPopup').style.display = 'none';
+  }
+
+  function togglePassword(id) {
+    const input = document.getElementById(id);
+    const icon = input.nextElementSibling;
+
+    if (input.type === "password") {
+      input.type = "text";
+      icon.classList.remove("fa-eye-slash");
+      icon.classList.add("fa-eye");
+    } else {
+      input.type = "password";
+      icon.classList.remove("fa-eye");
+      icon.classList.add("fa-eye-slash");
+    }
+  }
+
+  function register() {
+    // Логика регистрации
+    alert('Регистрация прошла успешно!');
+  }
+
+  document.querySelector('.register-menu-btn').addEventListener('click', openPopup);
+</script>
+
+<!-- mobile-mega-menu -->
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  function toggleDropdown(element) {
+    element.classList.toggle('open');
+  }
+</script>
+
+
+
+<!-- mob поиск -->
+<script>
+  function toggleSearchPopup() {
+    const popup = document.getElementById('searchPopup');
+    const overlay = document.getElementById('overlay');
+    popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+    overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function closeSearchPopup() {
+    const popup = document.getElementById('searchPopup');
+    const overlay = document.getElementById('overlay');
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+
+  function performSearch() {
+    const input = document.getElementById('searchInput');
+    const query = input.value;
+    alert('Выполняется поиск: ' + query);
+    // Здесь можно добавить логику для выполнения поиска
+  }
+</script>
+
+
+<!-- моб меню -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const openMobileMenu = document.getElementById('uniqueOpenMobileMenu');
+    const closeMobileMenu = document.getElementById('uniqueCloseMobileMenu');
+    const mobileMenuContainer = document.getElementById('uniqueMobileMenuContainer');
+
+    if (openMobileMenu && closeMobileMenu && mobileMenuContainer) {
+      openMobileMenu.addEventListener('click', function () {
+        mobileMenuContainer.classList.add('open');
+      });
+
+      closeMobileMenu.addEventListener('click', function () {
+        mobileMenuContainer.classList.remove('open');
+      });
+    } else {
+      console.error('Один из элементов не найден');
+    }
+  });
+</script>
+
+
+    <main>
+
+        <!-- slider-->
+        <div class="carousel">
+            <div class="carousel__item">
+                <picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel__img"></picture>
+                <div class="carusel_text">
+                    <div>Летние скидки до <span>20%</span></div>
+
+                    <div>для любимых хвостиков</div>
+                    <form action="/catalog.html" target="_blank">
+                        <button>Перейти в каталог</button>
+                    </form>
+                </div>
+            </div>
+            <!--  -->
+            <div class="carousel__item">
+                <picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel__img"></picture>
+                <div class="carusel_text">
+                    <div>Летние скидки до <span>20%</span></div>
+
+                    <div>для любимых хвостиков</div>
+                    <form action="/catalog.html" target="_blank">
+                        <button>Перейти в каталог</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    
+
+
+        <!--  -->
+        <div class="block-banner-main-wrapper">
+            <div class="baner-link">
+                <div class="carusel_text2">
+                    <h4>Для собак</h4>
+                    <div>Сухой корм</div>
+                    <div>Лакомства</div>
+                    <div>Корм для мелких пород</div>
+                    <div>Корм для щенков</div>
+                </div>
+                <form action="/catalog.html" target="_blank">
+                    <button>Перейти в каталог</button>
+                </form>
+            </div>
+            <!--  -->
+            <div class="baner-link2">
+                <div class="carusel_text2">
+                    <h4>Для кошек</h4>
+                    <div>Сухой корм</div>
+                    <div>Влажный корм</div>
+                    <div>Корм для стерилизованных</div>
+                    <div>Корм для котят</div>
+
+                </div>
+                <form action="/catalog.html" target="_blank">
+                    <button>Перейти в каталог</button>
+                </form>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        <!--  -->
+
+        <div class="title-ackcii">
+            <div class="slider-title-2">
+                <h2>Акции и баннеры</h2>
+                
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- slider2-->
+
+        <br>
+
+
+        <div class="multiple-items">
+            <div class="multiple-items__item"><img src="img/slider-2_mainPage/slider2.png" alt=""
+                    class="carousel2__img">
+            </div>
+            <div class="multiple-items__item"><img src="img/slider-2_mainPage/slider2.png" alt=""
+                    class="carousel2__img">
+            </div>
+            <div class="multiple-items__item"><img src="img/slider-2_mainPage/slider2.png" alt=""
+                    class="carousel2__img">
+            </div>
+            <div class="multiple-items__item"><img src="img/slider-2_mainPage/slider2.png" alt=""
+                    class="carousel2__img">
+            </div>
+            <div class="multiple-items__item"><img src="img/slider-2_mainPage/slider2.png" alt=""
+                    class="carousel2__img">
+            </div>
+            <div class="multiple-items__item"><img src="img/slider-2_mainPage/slider2.png" alt=""
+                    class="carousel2__img">
+            </div>
+        </div>
+        <br>
+        <a href="#" class="title-ackcii-a-l">Смотреть все</a>
+                <svg width="12" class="icon" height="12" viewBox="0 0 12 12" fill="#16151C"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.64616 11.0596C2.43137 11.2744 2.43137 11.6227 2.64616 11.8374C2.86094 12.0522 3.20919 12.0522 3.42397 11.8374L8.88383 6.37759C8.99128 6.27013 9.04498 6.12928 9.04492 5.98844C9.04498 5.84761 8.99128 5.70676 8.88383 5.5993L3.42397 0.139445C3.20918 -0.0753436 2.86094 -0.0753435 2.64616 0.139445C2.43137 0.354233 2.43137 0.702474 2.64616 0.917263L7.71734 5.98844L2.64616 11.0596Z">
+                        </path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="12" height="12" fill="white" transform="translate(0 12) rotate(-90)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+
+        <!--  -->
+        <br><br><br>
+        <!-- бренды -->
+        <h2><a href="/brands.html" class="title-ackcii-brend">Бренды</a></h2>
+        <div class="responsive-slider">
+            <div class="responsive-slider__item"><img src="img/brand-main/brand1.png" alt=""
+                    class="responsive-slider__img" style="filter: grayscale(100%);"></div>
+            <div class="responsive-slider__item"><img src="img/brand-main/brand1.png" alt=""
+                    class="responsive-slider__img"></div>
+            <div class="responsive-slider__item"><img src="img/brand-main/brand1.png" alt=""
+                    class="responsive-slider__img"></div>
+            <div class="responsive-slider__item"><img src="img/brand-main/brand1.png" alt=""
+                    class="responsive-slider__img"></div>
+            <div class="responsive-slider__item"><img src="img/brand-main/brand1.png" alt=""
+                    class="responsive-slider__img"></div>
+            <div class="responsive-slider__item"><img src="img/brand-main/brand1.png" alt=""
+                    class="responsive-slider__img"></div>
+        </div>
+
+        <!--test slider3-->
+        <br><br>
+        <div class="title-ackcii">
+            <div class="slider-title-2">
+                <h2>Вам будет интересно</h2>
+              
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- slider3 -->
+
+        <div class="multiple-items">
+            <div class="multiple-items__item"><picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel3__img"></picture>
+            </div>
+            <div class="multiple-items__item"><picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel3__img"></picture>
+            </div>
+            <div class="multiple-items__item"><picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel3__img"></picture>
+            </div>
+            <div class="multiple-items__item"><picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel3__img"></picture>
+            </div>
+            <div class="multiple-items__item"><picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel3__img"></picture>
+            </div>
+            <div class="multiple-items__item"><picture><source srcset="img/main-slider/mainBaner.webp" type="image/webp"><img src="img/main-slider/mainBaner.png" alt="" class="carousel3__img"></picture>
+            </div>
+        </div>
+        <br>
+
+        
+
+        <br><br>
+        <div class="main-page-info">
+            <div class="info-block">
+                <div>
+                    <picture><source srcset="img/logo/iconSale2.webp" type="image/webp"><img src="img/logo/iconSale2.png" alt=""></picture>
+                </div>
+
+                <div>
+                    <h4>Бонусная программа</h4>
+                    <p>Скидки и акции для постоянных клиентов до 7%</p>
+                </div>
+            </div>
+            <div class="info-block">
+                <div><picture><source srcset="img/logo/iconPlace.webp" type="image/webp"><img src="img/logo/iconPlace.png" alt=""></picture></div>
+                <div>
+                    <h4>Доставка по всей РБ</h4>
+                    <p>Заказывайте товары прямо к себе домой или офис</p>
+                </div>
+            </div>
+            <div class="info-block">
+                <div><picture><source srcset="img/logo/iconStar.webp" type="image/webp"><img src="img/logo/iconStar.png" alt=""></picture></div>
+                <div>
+                    <h4>Официальный представитель</h4>
+                    <p>Налаженные каналы сбыта и репутация надёжности брендов</p>
+                </div>
+            </div>
+            <div class="info-block">
+                <div><picture><source srcset="img/logo/iconWallet.webp" type="image/webp"><img src="img/logo/iconWallet.png" alt=""></picture></div>
+                <div>
+                    <h4>Гибкая оплата</h4>
+                    <p>Простота и удобство платежей (онлайн, ЕРИП, карты рассрочек)</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+
+    <br><br><br>
+
+    <footer class="footer">
+    <div class="footer-main">
+        <!--  -->
+        <div class="footer-first-block">
+            <div class="footer-logo-wrapper">
+                <picture><source srcset="img/logo/logo-e.webp" type="image/webp"><img class='logo-foot' src="img/logo/logo-e.png" alt=""></picture><a href="#"></a>
+                <p>Официальный дилер и импортёр кормов Bosch, Sanabelle, Adragna, Сhicopee и кормовых добавок Canina</p>
+
+            </div>
+
+            <div class="footer-contacts-wrapper">
+
+                <div class="footer-contacts-wrapper-link">
+                    <a href="tel:+37544757000" class="footer-link"><img src="img/logo/footerTel.png"
+                            alt="">+375(44)7570000</a>
+                </div>
+                <div class="footer-contacts-wrapper-link">
+                    <a href="#" class="footer-link"><picture><source srcset="img/logo/iconMail.webp" type="image/webp"><img src="img/logo/iconMail.png" alt=""></picture>evrokorm.by@gmail.com</a>
+                </div>
+                <div class="footer-contacts-wrapper-link">
+                    <a href="#" class="footer-link"><picture><source srcset="img/logo/iconMap.webp" type="image/webp"><img src="img/logo/iconMap.png" alt=""></picture>Хатежино, ул. Центральная,
+                        18Б/1</a>
+                </div>
+            </div>
+
+
+        </div>
+        <!--  -->
+        <div class="footer-second-block">
+            <h3>г.Минск</h3>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+
+            <details>
+
+                <summary></summary>
+
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            </details>
+        </div>
+        <!--  -->
+        <div class="footer-third-block">
+            <h3>г.Гомель</h3>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+            <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+
+            <details>
+
+                <summary></summary>
+
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+                <address>пр-т Дзержинского 3Б, БЦ Ocean</address>
+                <div class="time-work-footer">Без выходных с 10:00 – 21:00</div>
+            </details>
+        </div>
+        <!--  -->
+        <div class="footer-four-block">
+            <h3 class="footer-link_menu">Каталог</h3>
+
+
+            <a href="#">Для собак</a>
+            <a href="#">Для кошек</a>
+            <a href="#">Акции</a>
+            <a href="/brands.html">Бренды</a>
+            <a href="#">ВетАптека</a>
+
+        </div>
+        <!--  -->
+
+        <div class="footer-five-block">
+            <h3 class="footer-link_menu">Покупателям</h3>
+
+            <a href="/about.html">О нас</a>
+            <a href="/delivery.html">Доставка</a>
+            <a href="/oplata.html">Оплата</a>
+            <a href="/reviews.html">Отзывы</a>
+            <a href="/shops.html">Магазины</a>
+
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-pay-text">
+            <p>ООО «Профсотрудничество» УНП 192185928 Минская область, Минский район, Хатежинский сельский совет,
+                агрогородок Хатежино, ул. Центральная 18Б/1. Регистрационный номер в торговом реестре 5554557. Дата
+                внесения в торговый реестр 07.04.2023 г.</p>
+        </div>
+
+        <div class="footer-bottom-pay-icon">
+            <picture><source srcset="img/logo/master-secure.webp" type="image/webp"><img src="img/logo/master-secure.png" alt=""></picture>
+            <picture><source srcset="img/logo/mastercard.webp" type="image/webp"><img src="img/logo/mastercard.png" alt=""></picture>
+            <picture><source srcset="img/logo/visa.webp" type="image/webp"><img src="img/logo/visa.png" alt=""></picture>
+            <picture><source srcset="img/logo/visa2.webp" type="image/webp"><img src="img/logo/visa2.png" alt=""></picture>
+            <picture><source srcset="img/logo/belcard.webp" type="image/webp"><img src="img/logo/belcard.png" alt=""></picture>
+            <picture><source srcset="img/logo/assist.webp" type="image/webp"><img src="img/logo/assist.png" alt=""></picture>
+            <picture><source srcset="img/logo/oplati.webp" type="image/webp"><img src="img/logo/oplati.png" alt=""></picture>
+
+
+
+        </div>
+
+        <script src="js/app.min.js?_v=20240822151930"></script>
+</footer>
+</body>
+
+</html>

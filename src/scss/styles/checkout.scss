@@ -1,0 +1,288 @@
+.checkout-main-wrapper {
+    width: 1312px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-form {
+    width: 755px;
+}
+
+
+.order-form {
+    max-width: 100%;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#city {
+    width: 310px;
+}
+
+#address {
+    width: 755px;
+}
+
+#house,
+#building,
+#apartment {
+    width: 240px;
+}
+
+.delivery-options,
+.payment-options {
+    margin-bottom: 20px;
+}
+
+.delivery-option,
+.payment-option {
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.order-form {
+    max-width: 100%;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#city {
+    width: 310px;
+}
+
+#address {
+    width: 755px;
+}
+
+#house,
+#building,
+#apartment {
+    width: 240px;
+}
+
+.delivery-options,
+.payment-options {
+    margin-bottom: 20px;
+}
+
+.delivery-option,
+.payment-option {
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.form-secod-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.registration-wrapper {
+    width: 360px;
+
+    background-color: #FAFAFC;
+    color: #16151C;
+    padding: 26px 38px 26px 60px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.registration-wrapper a {
+    text-decoration: none;
+    color: #80808A;
+}
+
+.register-link img {
+    margin-right: 10px;
+}
+
+.register-link a {
+    display: flex;
+    align-items: center;
+}
+
+// способ доставки 
+.delivery-options {
+
+    width: 867px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.delivery-option {
+    width: 280px;
+    height: 115px;
+    border: 1px solid #E5E5EB;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.delivery-option p {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #80808A;
+    width: 180px;
+    margin-left: 30%;
+}
+
+.delivery-option img {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+// ------------
+.custom-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #8958F1;
+    outline: none;
+    position: relative;
+    margin-right: 5px;
+}
+
+.custom-radio:checked {
+    background-color: #8958F1;
+}
+
+.custom-radio:checked::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #8958F1;
+
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-radio:hover {
+    opacity: 0.8;
+}
+
+.payment {
+    width: 533px;
+}
+
+.payment-option p {
+    margin-left: 6%;
+    font-size: 12px;
+    color: #80808A;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.payment-option label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #16151C;
+}
+
+
+// ----
+.form-container-2 {
+    width: 644px;
+}
+
+.form-control {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mystic-name {
+    width: 100%;
+}
+
+.celestial-phone,
+.cosmic-email {
+    width: 310px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.galactic-comment {
+    width: 100%;
+    height: 148px;
+}
+
+.qwerty-test {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input {
+    border: 1px solid #E5E5EB;
+    border-radius: 5px;
+}
+.form-group textarea {
+    border: 1px solid #E5E5EB;
+    border-radius: 5px;
+}

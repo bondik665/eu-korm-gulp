@@ -1,0 +1,291 @@
+
+
+// мобила
+@media (max-width:767px) {
+
+    body {
+        max-width: 100%;
+        padding: 0 15px;
+        border: 1px solid red; 
+    }
+  
+
+    .main-header {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 5%;
+    }
+
+    // блок с телефоном
+    .menu-header-main-phone {
+        display: none;
+    }
+
+    // блок с меню
+    .list-menu-head a {
+        display: none;
+    }
+
+    .list-menu-head-block {
+        width: 114px;
+        margin-left: 0;
+
+    }
+
+    .carousel {
+        padding: 0 0 0;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    .carousel__img {
+        display: block;
+        width: 100%;
+        height: 180px;
+    }
+
+    .carusel_text {
+        width: 150px;
+        position: absolute;
+        left: 2%;
+        top: 14%;
+    }
+
+    .carusel_text span {
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(-13deg);
+        padding: 0px;
+    }
+
+
+
+    .carusel_text div {
+        font-size: 18px;
+        line-height: 24px;
+
+    }
+
+    .carusel_text button {
+        display: none;
+    }
+    
+    .carusel_text2 {
+        width: 100%;
+      
+    }
+
+    // ------------------------
+ 
+        .block-banner-main-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+  
+
+    // ---------------------
+    .baner-link,
+    .baner-link2 {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px;
+    }
+
+    .carusel_text2 div {
+        display: none;
+    }
+
+    .baner-link button,
+    .baner-link2 button {
+
+        margin-top: -9px;
+
+    }
+
+    // акции и банеры 
+    .carousel2__img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        padding-left: 0px;
+    }
+
+    .multiple-items {
+        padding: 0;
+        margin: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-page-info {
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        height: 184px;
+        width: 100%;
+        // из-за футера
+        margin-bottom: 360px;
+    }
+
+    .info-block {
+        width: 313px;
+        height: 152px;
+        padding: 0 16px 0 16px;
+        display: flex;
+        align-items: center;
+        text-align: start;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer-bottom-pay-text {
+        width: auto;
+    }
+
+    .footer-bottom {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 24px;
+        background-color: #16151c;
+        font-size: 12px;
+        line-height: 20px;
+        color: #80808a;
+        font-weight: 400;
+    }
+
+    .footer-bottom-pay-icon {
+        display: block;
+
+    }
+    .footer-logo-wrapper p {
+        width: 100%;
+    
+    }
+
+    // ----------------------------------------
+    // slider3 brand
+    .responsive-slider {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .responsive-slider__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive-slider__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    // ---------------------------------------- 
+    // показываем картинку мобил меню
+    //мобил  меню --------------------------
+
+
+    .mobile-block {
+        flex-wrap: nowrap !important;
+        gap: 5px !important;
+    }
+
+}
+
+/* Общие стили для мобильного меню */
+.unique-mobile-menu-container {
+    display: none;
+    /* Скрываем меню по умолчанию */
+
+    position: absolute;
+    top: 0;
+
+    right: 0rem;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.unique-mobile-menu-container.open {
+    display: block;
+    /* Показываем меню */
+}
+
+.unique-mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.unique-mobile-menu-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.unique-mobile-login-btn,
+.unique-mobile-register-btn {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.unique-mobile-close-btn {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.unique-mobile-menu-content {
+    padding: 20px;
+}
+
+.unique-mobile-menu-info p {
+    margin: 10px 0;
+}
+
+.unique-mobile-nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.unique-mobile-nav-list li {
+    margin: 10px 0;
+}
+
+.unique-mobile-nav-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Медиа-запрос для скрытия меню и кнопки на десктопных устройствах */
+@media (min-width: 1025px) {
+
+    .unique-mobile-menu-container,
+    .unique-menu-trigger {
+        display: none;
+        /* Скрываем меню и кнопку на десктопных устройствах */
+    }
+}

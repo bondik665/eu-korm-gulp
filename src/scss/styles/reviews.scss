@@ -1,0 +1,296 @@
+.reviews-title-wrapper {
+    width: 827px;
+}
+
+.visible {
+    display: block !important;
+
+}
+
+.reviews-wrapper-main {
+    display: flex;
+    justify-content: space-between;
+    width: 1312px;
+}
+
+.reviews-sidebar__container {
+    width: 420px;
+
+}
+
+.sidebar-img__top img {
+    width: 400px;
+    height: 320px;
+}
+
+.reviews-sidebar__createR {
+    width: 421px;
+    height: 230px;
+    border-radius: 20px;
+    background-color: #FAFAFC;
+
+}
+
+.reviews-sidebar__text {
+    width: 360px;
+    height: 90px;
+
+    padding: 20px;
+
+}
+
+
+// 
+.input-wrapper input {
+    width: 357px;
+    height: 48px;
+    padding: 13px 20px 13px 20px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+}
+
+.input-wrapper textarea {
+    width: 357px;
+    height: 168px;
+    padding: 13px 20px 13px 20px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+}
+
+.input-wrapper label {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.input-point {
+    margin-left: 31px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.field-form {
+    border-radius: 20px;
+    background-color: #FAFAFC;
+}
+
+
+
+.reviews-sidebar__createR h5 {
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 700;
+    color: #16151C;
+}
+
+.reviews-sidebar__createR p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #16151C;
+}
+
+.btn-form-wrapper .btn-click {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.reviews-container {
+    width: 827px;
+    margin-top: 40px;
+}
+
+.reviews-container__block-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn-click span {
+    width: 124px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #00A743;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 24px 12px 24px;
+    border: none;
+    cursor: pointer;
+
+}
+
+//
+.btn-form-wrapper {
+    width: 421px;
+}
+
+.field-form {
+    margin-top: 40px;
+    width: 421px;
+    height: 630px;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.input-point img {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-review-form {
+    width: 357px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #00A743;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 24px 12px 24px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.field-form__text {
+    text-align: center;
+    padding: 20px;
+}
+
+.field-form__text p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #16151C;
+}
+
+.field-form,
+.input-wrapper {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #111928;
+    font-weight: 600;
+}
+
+.input-point p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #111928;
+    font-weight: 600;
+}
+
+.reviews__name_autor {
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+
+
+// 
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 200px;
+    
+}
+
+.btn-pag {
+    border: 1px solid #E5E5EB;
+    height: 32px;
+    width: 32px;
+    // border-radius: 50%;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+    stroke: #8958F1;
+}
+
+.btn-pag:hover {
+    background-color: #8958F1;
+}
+
+.btn-pag:hover .btn-icon {
+    stroke: #fff;
+}
+
+.page-link:link,
+.page-link:visited {
+    text-decoration: none;
+    color: #343a40;
+    font-size: 18px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current {
+    background-color: #8958F1;
+    color: #fff;
+}
+
+.dots {
+    color: #868e96;
+}
+
+//   
+
+
+.reviews-filter__container {
+    margin-top: 40px;
+}
+
+.link-nav-reviev {
+    width: 113px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 16px 10px 16px;
+    color: #16151C;
+    background-color: transparent;
+    border: 1px solid #868e96;
+}
+
+.link-nav-reviev {
+    text-decoration: none;
+}
+
+// подсветка навгиации 
+.link-nav-reviev:hover,
+.link-nav-reviev:active,
+.link-nav-reviev.link--current {
+    background-color: #00A743;
+    color: #fff;
+}
+
+
+.dots {
+    color: #868e96;
+}

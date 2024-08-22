@@ -1,0 +1,72 @@
+
+
+
+
+@media (max-width: 767px){
+    .about-title-wrapper{
+        width: 100%;
+    }
+    .about-banner {
+        width: 100%;
+    }
+    .about-banner img{
+        width: 100%;
+    }
+    .about-description-text{
+        width: 100%;
+    }
+    .about-banner, .about-description-text, .about-title-wrapper, .lazy {
+        width: 100%;
+    }
+     
+    .about-title-info {
+        width: 100%;
+    }
+    .about-image-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    // 
+    .about-title-wrapper h1{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #16151C;
+    }
+    .about-title-wrapper h2{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #16151C;
+    }
+    .cert-wrapper-text h2{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #16151C;
+    }
+    .cert-wrapper-text p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #80808A;
+    }
+    .about-title-info h2{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #16151C;
+    }
+
+    //slider с сертификатами
+    .image img {
+    display: block;
+    width: 100%;
+    }
+}
+
+
+//

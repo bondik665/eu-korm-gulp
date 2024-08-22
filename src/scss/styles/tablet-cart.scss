@@ -1,0 +1,59 @@
+/* Общие стили */
+.wrapper-404 {
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1024px) {
+    .cart-main-box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 820px) {
+    .cart-item-wrapper {
+        width: 100%;
+        border: 1px solid #e5e5eb;
+        border-radius: 20px;
+    }
+    .cart-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .cart-item-header {
+        display: none;
+    }
+    .item-remove {
+        color: red;
+        font-size: 30px;
+        cursor: pointer;
+        position: relative;
+        top: -34px;
+        left: -11px;
+    }
+    .cart-wrapper-info {
+        width: 100%;
+    }
+    .cart-tovar-box {
+        width: 100%;
+    }
+    .item-name {
+        flex-grow: 1;
+        margin-left: -13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-tovar-box {
+        width: 103%;
+    }
+}

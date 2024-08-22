@@ -1,0 +1,284 @@
+
+.cart-main-box{
+    display: flex;
+    justify-content: space-between;
+    width: 1312px;
+}
+
+.cart-wrapper-info {
+    width: 928px;
+
+}
+
+.cart-header {
+
+    margin-bottom: 20px;
+}
+
+.cart-item-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: bold;
+    width: 856px;
+}
+.cart-item-header span{
+    font-size: 14px;
+    line-height: 20px;
+    color: #80808A;
+    font-weight: 400;
+}
+
+.cart-item-wrapper {
+    width: 910px;
+    border: 1px solid #E5E5EB;
+    border-radius: 20px;
+
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    width: 856px;
+}
+
+.item-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+.item-name {
+
+    flex-grow: 1;
+    margin-left: 20px;
+
+}
+
+.item-name p {
+
+    width: 296px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #16151C;
+}
+
+.name-tovar {
+    width: 410px;
+}
+
+
+.item-second-cart-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 344px;
+
+}
+
+.item-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.price-with-discount {
+    color: green;
+    font-weight: bold;
+}
+
+.price-without-discount {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.item-quantity input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.item-total {
+    font-weight: bold;
+}
+
+.item-remove {
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+
+    position: relative;
+    top: -34px;
+    left: 33px;
+}
+
+.btn-cart-quantiti{
+    width: 32px;
+    height: 32px;
+}
+.quantity-input-cart input {
+    width: 26px;
+    height: 44px;
+    text-align: center;
+    border: none;
+    // border-radius: 4px;
+    margin: 0 8px;
+    font-size: 20px;
+}
+
+.quantity-input-cart button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #16151C;
+    border-radius: 10px;
+     background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.name-price{
+    margin-right: 20px;
+}
+
+
+.item-remove-empty {
+    color: transparent;
+    font-size: 70px;
+    position: relative;
+    top: -40px;
+    left: 33px;
+}
+ .present-cart{
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 22px;
+    background-color:#FF9F48 ;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 2px 8px 4px 6px;
+    border-radius: 6px;
+}
+
+.item-name span{
+    font-size: 14px;
+    color: #80808A;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.cart-tovar-result{
+    width: 360px;
+    height: 340px;
+    border: 1px solid #E5E5EB;
+    border-radius: 20px;
+    padding: 32px;
+}
+.cart-element-block{
+    width: 296px;
+}
+.itogo-box{
+    height: 60px;
+    margin-bottom: 20px;
+   
+}
+.itogo-box h4{
+    font-size: 24px;
+    line-height: 1px;
+    color: #16151C;
+    font-weight: 700;
+
+}
+
+.itogo-box div{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E5EB;
+    font-size: 14px;
+    color: #80808A;
+    line-height: 20px;
+    font-weight: 400;
+} 
+.final{
+    height: 96px;
+}
+.final-price-sum ,.final-price{
+    margin-bottom: 10px;
+}
+.final-price-sum span{
+    margin-left: 30%;
+}
+.final-price span{
+    margin-left: 21%;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+ .final-old-price span{
+    margin-left: 29%;
+    color: red;
+}
+.final-old-price{
+    color: red;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.final-price{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #16151C;
+
+}
+.yellow-attention{
+    width: 360px;
+    height: 72px;
+    border-radius: 20px;
+    padding: 16px 56px 16px 56px;
+    background-color: #FEE992;
+    color: #16151C;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+// promo
+.promo-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 480px; /* 325px + 10px + 190px */
+}
+
+.promo-input {
+    width: 325px;
+    padding: 10px;
+    border: 1px solid #E5E5EB;
+    border-radius: 10px;
+    outline: none;
+}
+
+.apply-button {
+    width: 137px; /* Уменьшена ширина кнопки */
+    padding: 10px;
+    background-color: #00A743;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+
+.apply-button:hover {
+    background-color: #45a049;
+}
